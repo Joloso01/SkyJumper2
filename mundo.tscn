@@ -330,10 +330,11 @@ text = "
 		0"
 
 [node name="TextureRect2" type="TextureRect" parent="jugador/marcador"]
-margin_left = -562.231
-margin_top = -65.8536
-margin_right = -50.231
-margin_bottom = 446.146
+margin_left = -93.8101
+margin_top = 21.5146
+margin_right = 418.19
+margin_bottom = 533.514
+rect_scale = Vector2( 0.0992341, 0.0992341 )
 texture = ExtResource( 39 )
 expand = true
 
@@ -365,8 +366,8 @@ margin_bottom = 76.088
 texture = ExtResource( 40 )
 
 [node name="enemy" type="KinematicBody2D" parent="." groups=[
-"enemigo",
 "enemy",
+"enemigo",
 ]]
 editor/display_folded = true
 position = Vector2( 1649.1, 1886.68 )
@@ -398,8 +399,8 @@ cast_to = Vector2( 0, 12 )
 one_shot = true
 
 [node name="enemy2" type="KinematicBody2D" parent="." groups=[
-"enemigo",
 "enemy",
+"enemigo",
 ]]
 editor/display_folded = true
 position = Vector2( 2751.2, 1798.26 )
@@ -431,6 +432,7 @@ cast_to = Vector2( 0, 12 )
 one_shot = true
 
 [node name="fondo" type="CanvasLayer" parent="."]
+editor/display_folded = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="fondo"]
 
@@ -581,8 +583,8 @@ scale = Vector2( 0.497665, 0.497665 )
 texture = ExtResource( 73 )
 
 [node name="suelo" type="Area2D" parent="." groups=[
-"enemigo",
 "enemy",
+"enemigo",
 ]]
 editor/display_folded = true
 position = Vector2( 160.134, 2279.43 )
@@ -909,10 +911,10 @@ shape = SubResource( 10 )
 [connection signal="body_entered" from="objetos/moneda_4" to="objetos/moneda_4" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_5" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_5" to="objetos/moneda_5" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_6" to="objetos/moneda_6" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_6" to="jugador" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_7" to="objetos/moneda_7" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_6" to="objetos/moneda_6" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_7" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_7" to="objetos/moneda_7" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_8" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_8" to="objetos/moneda_8" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_9" to="jugador" method="_on_moneda_1_body_entered"]
@@ -921,21 +923,21 @@ shape = SubResource( 10 )
 [connection signal="body_entered" from="objetos/moneda_10" to="objetos/moneda_10" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_11" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_11" to="objetos/moneda_11" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_12" to="objetos/moneda_12" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_12" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_12" to="objetos/moneda_12" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_13" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_13" to="objetos/moneda_13" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_14" to="objetos/moneda_14" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_14" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_14" to="objetos/moneda_14" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_15" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_15" to="objetos/moneda_15" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_16" to="objetos/moneda_16" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_16" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_16" to="objetos/moneda_16" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_17" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_17" to="objetos/moneda_17" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_18" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_18" to="objetos/moneda_18" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_19" to="objetos/moneda_19" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_19" to="jugador" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_20" to="objetos/moneda_20" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_19" to="objetos/moneda_19" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_20" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_20" to="objetos/moneda_20" method="_on_moneda_1_body_entered"]
