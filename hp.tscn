@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Hearts/PNG/basic/heart.png" type="Texture" id=1]
+
+[node name="Sprite" type="Sprite" groups=[
+"vida",
+]]
+modulate = Color( 1, 0, 0, 1 )
+position = Vector2( 143.575, 37.6467 )
+scale = Vector2( 3.05559, 2.49812 )
+texture = ExtResource( 1 )
+offset = Vector2( -32, 0 )
+

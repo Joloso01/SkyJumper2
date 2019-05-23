@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/switch35.wav-9918f01187c31ba2558e8b19d9be77d5.sample"
+
+[deps]
+
+source_file="res://MENU PRINCIPAL/UI_SFX_Set/switch35.wav"
+dest_files=[ "res://.import/switch35.wav-9918f01187c31ba2558e8b19d9be77d5.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

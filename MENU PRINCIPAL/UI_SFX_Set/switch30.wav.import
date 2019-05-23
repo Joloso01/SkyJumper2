@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/switch30.wav-a3d945c0504780fbe4be77095550aa28.sample"
+
+[deps]
+
+source_file="res://MENU PRINCIPAL/UI_SFX_Set/switch30.wav"
+dest_files=[ "res://.import/switch30.wav-a3d945c0504780fbe4be77095550aa28.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

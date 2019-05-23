@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Game of Thrones - Main Theme (Extended) HD.wav-d07c7c16f18c0ea1f6f876f2d0fb5636.sample"
+
+[deps]
+
+source_file="res://musica/Game of Thrones - Main Theme (Extended) HD.wav"
+dest_files=[ "res://.import/Game of Thrones - Main Theme (Extended) HD.wav-d07c7c16f18c0ea1f6f876f2d0fb5636.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
