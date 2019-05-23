@@ -1,151 +1,55 @@
-[gd_scene load_steps=86 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://mundo.gd" type="Script" id=1]
 [ext_resource path="res://musica/mapa.wav" type="AudioStream" id=2]
 [ext_resource path="res://completo.tres" type="TileSet" id=3]
-[ext_resource path="res://jugador.gd" type="Script" id=4]
-[ext_resource path="res://flecha.tscn" type="PackedScene" id=5]
-[ext_resource path="res://pausa.gd" type="Script" id=6]
-[ext_resource path="res://MENU PRINCIPAL/botones inicio/boton3.png" type="Texture" id=7]
-[ext_resource path="res://Fuente/Nugie Romantic Italic.ttf" type="DynamicFontData" id=8]
-[ext_resource path="res://PERSONAJE/Adventurer-Hand-Combat/Individual Sprites/adventurer-knock-dwn-00.png" type="Texture" id=9]
-[ext_resource path="res://PERSONAJE/Adventurer-Hand-Combat/Individual Sprites/adventurer-knock-dwn-01.png" type="Texture" id=10]
-[ext_resource path="res://PERSONAJE/Adventurer-Hand-Combat/Individual Sprites/adventurer-knock-dwn-02.png" type="Texture" id=11]
-[ext_resource path="res://PERSONAJE/Adventurer-Hand-Combat/Individual Sprites/adventurer-knock-dwn-03.png" type="Texture" id=12]
-[ext_resource path="res://PERSONAJE/Adventurer-Hand-Combat/Individual Sprites/adventurer-knock-dwn-04.png" type="Texture" id=13]
-[ext_resource path="res://PERSONAJE/Adventurer-Hand-Combat/Individual Sprites/adventurer-knock-dwn-05.png" type="Texture" id=14]
-[ext_resource path="res://PERSONAJE/Adventurer-Hand-Combat/Individual Sprites/adventurer-knock-dwn-06.png" type="Texture" id=15]
-[ext_resource path="res://PERSONAJE/Adventurer-1.5/Individual Sprites/adventurer-fall-00.png" type="Texture" id=16]
-[ext_resource path="res://PERSONAJE/Adventurer-1.5/Individual Sprites/adventurer-fall-01.png" type="Texture" id=17]
-[ext_resource path="res://PERSONAJE/Adventurer-1.5/Individual Sprites/adventurer-idle-00.png" type="Texture" id=18]
-[ext_resource path="res://PERSONAJE/Adventurer-1.5/Individual Sprites/adventurer-idle-01.png" type="Texture" id=19]
-[ext_resource path="res://PERSONAJE/Adventurer-1.5/Individual Sprites/adventurer-smrslt-00.png" type="Texture" id=20]
-[ext_resource path="res://PERSONAJE/Adventurer-1.5/Individual Sprites/adventurer-smrslt-01.png" type="Texture" id=21]
-[ext_resource path="res://PERSONAJE/Adventurer-1.5/Individual Sprites/adventurer-smrslt-02.png" type="Texture" id=22]
-[ext_resource path="res://PERSONAJE/Adventurer-1.5/Individual Sprites/adventurer-smrslt-03.png" type="Texture" id=23]
-[ext_resource path="res://PERSONAJE/Adventurer-Bow/Individual Sprites/adventurer-bow-01.png" type="Texture" id=24]
-[ext_resource path="res://PERSONAJE/Adventurer-Bow/Individual Sprites/adventurer-bow-02.png" type="Texture" id=25]
-[ext_resource path="res://PERSONAJE/Adventurer-Bow/Individual Sprites/adventurer-bow-05.png" type="Texture" id=26]
-[ext_resource path="res://PERSONAJE/Adventurer-Bow/Individual Sprites/adventurer-bow-06.png" type="Texture" id=27]
-[ext_resource path="res://PERSONAJE/Adventurer-Bow/Individual Sprites/adventurer-bow-08.png" type="Texture" id=28]
-[ext_resource path="res://PERSONAJE/Adventurer-Bow/Individual Sprites/adventurer-bow-07.png" type="Texture" id=29]
-[ext_resource path="res://PERSONAJE/Adventurer-1.5/Individual Sprites/adventurer-run-00.png" type="Texture" id=30]
-[ext_resource path="res://PERSONAJE/Adventurer-1.5/Individual Sprites/adventurer-run-01.png" type="Texture" id=31]
-[ext_resource path="res://PERSONAJE/Adventurer-1.5/Individual Sprites/adventurer-run-02.png" type="Texture" id=32]
-[ext_resource path="res://PERSONAJE/Adventurer-1.5/Individual Sprites/adventurer-run-03.png" type="Texture" id=33]
-[ext_resource path="res://PERSONAJE/Adventurer-1.5/Individual Sprites/adventurer-run-04.png" type="Texture" id=34]
-[ext_resource path="res://PERSONAJE/Adventurer-1.5/Individual Sprites/adventurer-run-05.png" type="Texture" id=35]
-[ext_resource path="res://PERSONAJE/Adventurer-1.5/Individual Sprites/adventurer-jump-01.png" type="Texture" id=36]
-[ext_resource path="res://PERSONAJE/Adventurer-1.5/Individual Sprites/adventurer-jump-03.png" type="Texture" id=37]
-[ext_resource path="res://Fuente/Nugie Romantic.ttf" type="DynamicFontData" id=38]
-[ext_resource path="res://MENU PRINCIPAL/Ranks coins and more/coin-gold.png" type="Texture" id=39]
-[ext_resource path="res://PERSONAJE/Adventurer-1.5/Individual Sprites/adventurer-idle-2-00.png" type="Texture" id=40]
-[ext_resource path="res://enemy.gd" type="Script" id=41]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_01.png" type="Texture" id=42]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_02.png" type="Texture" id=43]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_03.png" type="Texture" id=44]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_04.png" type="Texture" id=45]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_05.png" type="Texture" id=46]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_06.png" type="Texture" id=47]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_07.png" type="Texture" id=48]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_08.png" type="Texture" id=49]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_09.png" type="Texture" id=50]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_10.png" type="Texture" id=51]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_11.png" type="Texture" id=52]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_12.png" type="Texture" id=53]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_13.png" type="Texture" id=54]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_14.png" type="Texture" id=55]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_15.png" type="Texture" id=56]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_16.png" type="Texture" id=57]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_17.png" type="Texture" id=58]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_01.png" type="Texture" id=59]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_02.png" type="Texture" id=60]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_03.png" type="Texture" id=61]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_04.png" type="Texture" id=62]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_05.png" type="Texture" id=63]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_06.png" type="Texture" id=64]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_07.png" type="Texture" id=65]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_08.png" type="Texture" id=66]
-[ext_resource path="res://MAPA/Grassy_Mountains_Parallax_Background-vnitti/layers_fullcolor/sky_fc.png" type="Texture" id=67]
-[ext_resource path="res://MAPA/Grassy_Mountains_Parallax_Background-vnitti/layers_fullcolor/far_mountains_fc.png" type="Texture" id=68]
-[ext_resource path="res://MAPA/Grassy_Mountains_Parallax_Background-vnitti/layers_fullcolor/grassy_mountains_fc.png" type="Texture" id=69]
-[ext_resource path="res://MAPA/Grassy_Mountains_Parallax_Background-vnitti/layers_fullcolor/clouds_mid_fc.png" type="Texture" id=70]
-[ext_resource path="res://MAPA/Grassy_Mountains_Parallax_Background-vnitti/layers_fullcolor/clouds_front_fc.png" type="Texture" id=71]
-[ext_resource path="res://Node23D.gd" type="Script" id=72]
-[ext_resource path="res://MENU PRINCIPAL/Cursor.png" type="Texture" id=73]
-[ext_resource path="res://moneda_1.gd" type="Script" id=74]
-[ext_resource path="res://MENU PRINCIPAL/Monedas/MonedaD.png" type="Texture" id=75]
-
-[sub_resource type="DynamicFont" id=1]
-size = 30
-use_mipmaps = true
-use_filter = true
-font_data = ExtResource( 8 )
-
-[sub_resource type="SpriteFrames" id=2]
-animations = [ {
-"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ) ],
-"loop": false,
-"name": "muerto",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 16 ), ExtResource( 17 ) ],
-"loop": false,
-"name": "caida",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 18 ), ExtResource( 19 ) ],
-"loop": true,
-"name": "quieto",
-"speed": 4.5
-}, {
-"frames": [ ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 20 ) ],
-"loop": false,
-"name": "doblesalto",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ) ],
-"loop": false,
-"name": "ataque",
-"speed": 13.0
-}, {
-"frames": [ ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ) ],
-"loop": true,
-"name": "correr",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 36 ), ExtResource( 37 ), ExtResource( 17 ) ],
-"loop": false,
-"name": "salto",
-"speed": 5.0
-} ]
-
-[sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 14.9525, 21.998 )
-
-[sub_resource type="DynamicFont" id=4]
-size = 20
-use_mipmaps = true
-extra_spacing_bottom = -1
-extra_spacing_space = 1
-font_data = ExtResource( 38 )
-
-[sub_resource type="StyleBoxFlat" id=5]
-bg_color = Color( 0.509804, 0.862745, 0, 1 )
-
-[sub_resource type="StyleBoxFlat" id=6]
-bg_color = Color( 0.858824, 0, 0, 1 )
+[ext_resource path="res://escenas mundos/jugador.tscn" type="PackedScene" id=4]
+[ext_resource path="res://enemy.gd" type="Script" id=5]
+[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_01.png" type="Texture" id=6]
+[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_02.png" type="Texture" id=7]
+[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_03.png" type="Texture" id=8]
+[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_04.png" type="Texture" id=9]
+[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_05.png" type="Texture" id=10]
+[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_06.png" type="Texture" id=11]
+[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_07.png" type="Texture" id=12]
+[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_08.png" type="Texture" id=13]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_01.png" type="Texture" id=14]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_02.png" type="Texture" id=15]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_03.png" type="Texture" id=16]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_04.png" type="Texture" id=17]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_05.png" type="Texture" id=18]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_06.png" type="Texture" id=19]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_07.png" type="Texture" id=20]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_08.png" type="Texture" id=21]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_09.png" type="Texture" id=22]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_10.png" type="Texture" id=23]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_11.png" type="Texture" id=24]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_12.png" type="Texture" id=25]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_13.png" type="Texture" id=26]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_14.png" type="Texture" id=27]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_15.png" type="Texture" id=28]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_16.png" type="Texture" id=29]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_17.png" type="Texture" id=30]
+[ext_resource path="res://MAPA/Grassy_Mountains_Parallax_Background-vnitti/layers_fullcolor/sky_fc.png" type="Texture" id=31]
+[ext_resource path="res://MAPA/Grassy_Mountains_Parallax_Background-vnitti/layers_fullcolor/far_mountains_fc.png" type="Texture" id=32]
+[ext_resource path="res://MAPA/Grassy_Mountains_Parallax_Background-vnitti/layers_fullcolor/grassy_mountains_fc.png" type="Texture" id=33]
+[ext_resource path="res://MAPA/Grassy_Mountains_Parallax_Background-vnitti/layers_fullcolor/clouds_mid_fc.png" type="Texture" id=34]
+[ext_resource path="res://MAPA/Grassy_Mountains_Parallax_Background-vnitti/layers_fullcolor/clouds_front_fc.png" type="Texture" id=35]
+[ext_resource path="res://Node23D.gd" type="Script" id=36]
+[ext_resource path="res://MENU PRINCIPAL/Cursor.png" type="Texture" id=37]
+[ext_resource path="res://moneda_1.gd" type="Script" id=38]
+[ext_resource path="res://MENU PRINCIPAL/Monedas/MonedaD.png" type="Texture" id=39]
 
 [sub_resource type="SpriteFrames" id=7]
 animations = [ {
-"frames": [ ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ) ],
-"loop": true,
-"name": "muerto",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ) ],
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
 "loop": true,
 "name": "correr",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ) ],
+"loop": true,
+"name": "muerto",
 "speed": 5.0
 } ]
 
@@ -201,169 +105,7 @@ cell_quadrant_size = 18
 format = 1
 tile_data = PoolIntArray( 15270152, 125, 0, 15466753, 49, 0, 15466754, 49, 0, 15466755, 49, 0, 15466756, 49, 0, 15466757, 49, 0, 15466758, 49, 0, 15466759, 49, 0, 15466760, 49, 0, 15466761, 49, 0, 15466762, 49, 0, 15466763, 127, 0, 15466764, 49, 0, 15466765, 49, 0, 15466766, 49, 0, 15466767, 49, 0, 15466768, 49, 0, 15466769, 49, 0, 15466770, 49, 0, 15466771, 49, 0, 15532395, 125, 0, 15532412, 125, 0, 15532422, 125, 0, 15663496, 117, 0, 15663501, 117, 0, 15729010, 108, 0, 15729018, 108, 0, 15729028, 108, 0, 16318704, 125, 0, 16515309, 49, 0, 16515310, 49, 0, 16515311, 49, 0, 16515313, 49, 0, 16515314, 127, 0, 16777443, 125, 0, 16973852, 125, 0, 16973864, 125, 0, 16973878, 125, 0, 16973974, 125, 0, 16974007, 125, 0, 16974034, 125, 0, 17104928, 117, 0, 17104943, 117, 0, 17170458, 49, 0, 17170459, 49, 0, 17170460, 49, 0, 17170461, 49, 0, 17170462, 49, 0, 17170463, 49, 0, 17170464, 49, 0, 17170465, 49, 0, 17170466, 49, 0, 17170467, 49, 0, 17170468, 49, 0, 17170469, 49, 0, 17170470, 49, 0, 17170471, 49, 0, 17170472, 49, 0, 17170473, 49, 0, 17170474, 49, 0, 17170475, 49, 0, 17170476, 49, 0, 17170477, 49, 0, 17170478, 49, 0, 17170479, 49, 0, 17170480, 49, 0, 17170481, 49, 0, 17170482, 49, 0, 17170483, 49, 0, 17170484, 49, 0, 17170485, 49, 0, 17170486, 49, 0, 17170487, 49, 0, 17170488, 49, 0, 17170489, 108, 0, 17170490, 49, 0, 17170491, 49, 0, 17170492, 49, 0, 17170493, 49, 0, 17170494, 49, 0, 17170495, 127, 0, 17170582, 44, 0, 17170583, 44, 0, 17170584, 44, 0, 17170585, 44, 0, 17170586, 44, 0, 17170587, 44, 0, 17170588, 44, 0, 17170589, 44, 0, 17170590, 44, 0, 17170591, 44, 0, 17170592, 44, 0, 17170593, 44, 0, 17170594, 44, 0, 17170595, 44, 0, 17170596, 44, 0, 17170597, 44, 0, 17170598, 44, 0, 17170599, 44, 0, 17170600, 44, 0, 17170601, 44, 0, 17170602, 44, 0, 17170603, 44, 0, 17170604, 44, 0, 17170605, 44, 0, 17170606, 44, 0, 17170607, 44, 0, 17170608, 44, 0, 17170609, 44, 0, 17170610, 44, 0, 17170611, 44, 0, 17170612, 44, 0, 17170613, 44, 0, 17170614, 44, 0, 17170615, 44, 0, 17170616, 44, 0, 17170617, 44, 0, 17170618, 44, 0, 17170619, 44, 0, 17170620, 44, 0, 17170621, 44, 0, 17170622, 44, 0, 17170623, 44, 0, 17170624, 44, 0, 17170625, 44, 0, 17170626, 44, 0, 17170627, 44, 0, 17170628, 44, 0, 17170629, 44, 0, 17170630, 44, 0, 17170631, 44, 0, 17170632, 44, 0, 17170633, 44, 0, 17170634, 44, 0, 17170635, 44, 0, 17170636, 44, 0, 17170637, 44, 0, 17170638, 44, 0, 17170639, 44, 0, 17170640, 44, 0, 17170641, 44, 0, 17170642, 44, 0, 17170643, 44, 0, 17170644, 44, 0, 17170645, 44, 0, 17170646, 44, 0, 17170647, 44, 0, 17170648, 44, 0, 17170649, 44, 0, 17170650, 44, 0, 17170651, 44, 0, 17367111, 49, 0, 17367112, 49, 0, 17367113, 49, 0, 17367114, 49, 0, 17367115, 49, 0, 17367116, 49, 0, 17367117, 49, 0, 17367118, 49, 0, 17367119, 49, 0, 17367120, 49, 0, 17367121, 126, 0, 17367124, 49, 0, 17367125, 49, 0, 17367126, 49, 0, 17367127, 108, 0, 17367128, 49, 0, 17367129, 49, 0, 17367130, 49, 0, 17367131, 49, 0, 17367132, 49, 0, 17367133, 49, 0, 17367134, 49, 0, 17367135, 49, 0 )
 
-[node name="jugador" type="KinematicBody2D" parent="." groups=[
-"player",
-]]
-position = Vector2( 46.9426, 1938.66 )
-script = ExtResource( 4 )
-Proyectiles = ExtResource( 5 )
-
-[node name="Camera2D" type="Camera2D" parent="jugador"]
-position = Vector2( 81.5398, -39.5922 )
-current = true
-zoom = Vector2( 0.75, 0.75 )
-process_mode = 0
-drag_margin_h_enabled = false
-drag_margin_v_enabled = false
-smoothing_enabled = true
-
-[node name="pausa" type="Control" parent="jugador"]
-pause_mode = 2
-editor/display_folded = true
-visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = -302.367
-margin_top = -314.38
-margin_right = -302.367
-margin_bottom = -314.38
-script = ExtResource( 6 )
-
-[node name="fondo" type="ColorRect" parent="jugador/pausa"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-color = Color( 0.811765, 0.811765, 0.811765, 1 )
-
-[node name="NinePatchRect" type="NinePatchRect" parent="jugador/pausa/fondo"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-texture = ExtResource( 7 )
-
-[node name="Label" type="Label" parent="jugador/pausa/fondo/NinePatchRect"]
-margin_left = 232.289
-margin_top = 72.4231
-margin_right = 531.289
-margin_bottom = 131.423
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.733333, 0.776471, 0.729412, 1 )
-custom_colors/font_outline_modulate = Color( 0.0431373, 0.0352941, 0.0352941, 1 )
-custom_colors/font_color_shadow = Color( 0.160784, 0.121569, 0.121569, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/line_spacing = 1
-custom_constants/shadow_offset_y = 1
-custom_constants/shadow_as_outline = 1
-text = "Menu Pausa"
-align = 1
-valign = 1
-
-[node name="Label2" type="Label" parent="jugador/pausa/fondo/NinePatchRect"]
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-margin_left = 178.334
-margin_top = 125.967
-margin_right = 596.334
-margin_bottom = 156.967
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.733333, 0.776471, 0.729412, 1 )
-custom_colors/font_outline_modulate = Color( 0.0431373, 0.0352941, 0.0352941, 1 )
-custom_colors/font_color_shadow = Color( 0.160784, 0.121569, 0.121569, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/line_spacing = 1
-custom_constants/shadow_offset_y = 1
-custom_constants/shadow_as_outline = 1
-text = "Pulsa esc para continuar jugando"
-align = 1
-valign = 1
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="jugador"]
-position = Vector2( 0.118057, -6.43555 )
-scale = Vector2( 1.53037, 1.42999 )
-frames = SubResource( 2 )
-animation = "muerto"
-frame = 6
-speed_scale = 1.5
-playing = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="jugador"]
-position = Vector2( -0.0887032, -1.73177 )
-scale = Vector2( 0.814235, 0.909377 )
-shape = SubResource( 3 )
-
-[node name="Position2D" type="Position2D" parent="jugador" groups=[
-"flecha",
-]]
-position = Vector2( -21.5555, -0.994869 )
-
-[node name="Timer" type="Timer" parent="jugador"]
-wait_time = 2.0
-one_shot = true
-
-[node name="marcador" type="Control" parent="jugador"]
-anchor_left = 1.0
-anchor_right = 1.0
-margin_left = 434.097
-margin_top = -247.268
-margin_right = 434.097
-margin_bottom = -247.268
-
-[node name="RichTextLabel" type="RichTextLabel" parent="jugador/marcador"]
-anchor_left = 1.0
-anchor_right = 1.0
-margin_left = -69.0
-margin_top = 16.0
-margin_right = -26.0
-margin_bottom = 64.0
-custom_fonts/normal_font = SubResource( 4 )
-custom_colors/default_color = Color( 0.854902, 0.933333, 0.156863, 1 )
-custom_colors/selection_color = Color( 0.27451, 0.145098, 0.145098, 1 )
-custom_colors/font_color_selected = Color( 0.121569, 0.0784314, 0.0784314, 1 )
-custom_colors/font_color_shadow = Color( 0.254902, 0.235294, 0.235294, 1 )
-custom_constants/table_vseparation = 1
-custom_constants/shadow_offset_x = 1
-custom_constants/shadow_offset_y = 1
-custom_constants/table_hseparation = 1
-custom_constants/line_separation = 1
-custom_constants/shadow_as_outline = 1
-meta_underlined = false
-text = "
-	0"
-
-[node name="TextureRect2" type="TextureRect" parent="jugador/marcador"]
-margin_left = -108.47
-margin_top = 7.10742
-margin_right = 239.53
-margin_bottom = 355.107
-rect_scale = Vector2( 0.0992341, 0.0992341 )
-texture = ExtResource( 39 )
-expand = true
-
-[node name="marcador2" type="Control" parent="jugador"]
-anchor_left = 1.0
-anchor_right = 1.0
-margin_left = -178.342
-margin_top = -256.346
-margin_right = -178.342
-margin_bottom = -256.346
-
-[node name="ProgressBar" type="ProgressBar" parent="jugador/marcador2" groups=[
-"hpj1",
-]]
-margin_left = -43.2422
-margin_top = 52.1913
-margin_right = 156.758
-margin_bottom = 66.1913
-custom_styles/fg = SubResource( 5 )
-custom_styles/bg = SubResource( 6 )
-step = 1.0
-value = 100.0
-
-[node name="TextureRect" type="TextureRect" parent="jugador/marcador2"]
-margin_left = -80.954
-margin_top = 36.088
-margin_right = -30.954
-margin_bottom = 76.088
-texture = ExtResource( 40 )
+[node name="jugador" parent="." instance=ExtResource( 4 )]
 
 [node name="enemy" type="KinematicBody2D" parent="." groups=[
 "enemy",
@@ -372,7 +114,7 @@ texture = ExtResource( 40 )
 editor/display_folded = true
 position = Vector2( 1649.1, 1886.68 )
 collision/safe_margin = 0.001
-script = ExtResource( 41 )
+script = ExtResource( 5 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -406,7 +148,7 @@ one_shot = true
 editor/display_folded = true
 position = Vector2( 2751.2, 1798.26 )
 collision/safe_margin = 0.001
-script = ExtResource( 41 )
+script = ExtResource( 5 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -437,6 +179,7 @@ one_shot = true
 editor/display_folded = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="fondo"]
+editor/display_folded = true
 
 [node name="capa1" type="ParallaxLayer" parent="fondo/ParallaxBackground"]
 editor/display_folded = true
@@ -444,7 +187,7 @@ editor/display_folded = true
 [node name="Sprite2" type="Sprite" parent="fondo/ParallaxBackground/capa1"]
 position = Vector2( 2075.98, 2803.66 )
 scale = Vector2( 16.6002, 16.7409 )
-texture = ExtResource( 67 )
+texture = ExtResource( 31 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -454,96 +197,96 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="fondo/ParallaxBackground/capa2"]
 position = Vector2( 688.134, 1918.25 )
 scale = Vector2( 9.47039, 2.81009 )
-texture = ExtResource( 68 )
+texture = ExtResource( 32 )
 
 [node name="Sprite2" type="Sprite" parent="fondo/ParallaxBackground/capa2"]
 position = Vector2( 3385.92, 1914.93 )
 scale = Vector2( 6.79537, 2.21807 )
-texture = ExtResource( 68 )
+texture = ExtResource( 32 )
 
 [node name="capa3" type="ParallaxLayer" parent="fondo/ParallaxBackground"]
 
 [node name="Sprite" type="Sprite" parent="fondo/ParallaxBackground/capa3"]
 position = Vector2( 486.728, 1947.68 )
 scale = Vector2( 3.05785, 2.68488 )
-texture = ExtResource( 69 )
+texture = ExtResource( 33 )
 
 [node name="Sprite6" type="Sprite" parent="fondo/ParallaxBackground/capa3"]
 position = Vector2( -761.39, 1950.55 )
 scale = Vector2( 3.44519, 3.02497 )
-texture = ExtResource( 69 )
+texture = ExtResource( 33 )
 
 [node name="Sprite2" type="Sprite" parent="fondo/ParallaxBackground/capa3"]
 position = Vector2( 1608.71, 1942.46 )
 scale = Vector2( 2.80558, 2.58043 )
-texture = ExtResource( 69 )
+texture = ExtResource( 33 )
 
 [node name="Sprite3" type="Sprite" parent="fondo/ParallaxBackground/capa3"]
 position = Vector2( 2412.39, 1938.64 )
 scale = Vector2( 2.64182, 2.31959 )
-texture = ExtResource( 69 )
+texture = ExtResource( 33 )
 
 [node name="Sprite4" type="Sprite" parent="fondo/ParallaxBackground/capa3"]
 position = Vector2( 3422.45, 1937.04 )
 scale = Vector2( 2.64182, 2.34233 )
-texture = ExtResource( 69 )
+texture = ExtResource( 33 )
 
 [node name="Sprite5" type="Sprite" parent="fondo/ParallaxBackground/capa3"]
 position = Vector2( 4590.63, 1941.27 )
 scale = Vector2( 3.47991, 3.05546 )
-texture = ExtResource( 69 )
+texture = ExtResource( 33 )
 
 [node name="capa4" type="ParallaxLayer" parent="fondo/ParallaxBackground"]
 
 [node name="Sprite2" type="Sprite" parent="fondo/ParallaxBackground/capa4"]
 position = Vector2( 172.209, 2035.38 )
 scale = Vector2( 1.40856, 2.1517 )
-texture = ExtResource( 70 )
+texture = ExtResource( 34 )
 
 [node name="Sprite10" type="Sprite" parent="fondo/ParallaxBackground/capa4"]
 position = Vector2( -382.888, 2023.83 )
 scale = Vector2( 2.02009, 2.07326 )
-texture = ExtResource( 70 )
+texture = ExtResource( 34 )
 
 [node name="Sprite11" type="Sprite" parent="fondo/ParallaxBackground/capa4"]
 position = Vector2( -1126.84, 2025.68 )
 scale = Vector2( 2.02009, 2.07326 )
-texture = ExtResource( 70 )
+texture = ExtResource( 34 )
 
 [node name="Sprite3" type="Sprite" parent="fondo/ParallaxBackground/capa4"]
 position = Vector2( 1194.89, 2050.81 )
 scale = Vector2( 1.34061, 2.02771 )
-texture = ExtResource( 70 )
+texture = ExtResource( 34 )
 
 [node name="Sprite5" type="Sprite" parent="fondo/ParallaxBackground/capa4"]
 position = Vector2( 1747.97, 2050.89 )
 scale = Vector2( 1.54797, 1.99873 )
-texture = ExtResource( 70 )
+texture = ExtResource( 34 )
 
 [node name="Sprite6" type="Sprite" parent="fondo/ParallaxBackground/capa4"]
 position = Vector2( 2293.48, 2060.93 )
 scale = Vector2( 1.34061, 1.81874 )
-texture = ExtResource( 70 )
+texture = ExtResource( 34 )
 
 [node name="Sprite7" type="Sprite" parent="fondo/ParallaxBackground/capa4"]
 position = Vector2( 2762.62, 2057.18 )
 scale = Vector2( 1.34061, 1.76758 )
-texture = ExtResource( 70 )
+texture = ExtResource( 34 )
 
 [node name="Sprite8" type="Sprite" parent="fondo/ParallaxBackground/capa4"]
 position = Vector2( 3234.97, 2066.38 )
 scale = Vector2( 1.34061, 1.85683 )
-texture = ExtResource( 70 )
+texture = ExtResource( 34 )
 
 [node name="Sprite9" type="Sprite" parent="fondo/ParallaxBackground/capa4"]
 position = Vector2( 3748.58, 2070.34 )
 scale = Vector2( 1.34061, 1.86989 )
-texture = ExtResource( 70 )
+texture = ExtResource( 34 )
 
 [node name="Sprite4" type="Sprite" parent="fondo/ParallaxBackground/capa4"]
 position = Vector2( 689.728, 2048.36 )
 scale = Vector2( 1.34061, 1.89821 )
-texture = ExtResource( 70 )
+texture = ExtResource( 34 )
 
 [node name="capa5" type="ParallaxLayer" parent="fondo/ParallaxBackground"]
 
@@ -553,36 +296,36 @@ editor/display_folded = true
 [node name="Sprite" type="Sprite" parent="fondo/ParallaxBackground/capa6"]
 position = Vector2( 583.525, 1786.08 )
 scale = Vector2( 3.48366, 4.7413 )
-texture = ExtResource( 71 )
+texture = ExtResource( 35 )
 
 [node name="Sprite5" type="Sprite" parent="fondo/ParallaxBackground/capa6"]
 position = Vector2( -718.764, 1788.03 )
 scale = Vector2( 3.47173, 4.75922 )
-texture = ExtResource( 71 )
+texture = ExtResource( 35 )
 
 [node name="Sprite2" type="Sprite" parent="fondo/ParallaxBackground/capa6"]
 position = Vector2( 1975.27, 1790.45 )
 scale = Vector2( 3.83323, 4.72772 )
-texture = ExtResource( 71 )
+texture = ExtResource( 35 )
 
 [node name="Sprite3" type="Sprite" parent="fondo/ParallaxBackground/capa6"]
 position = Vector2( 3397.15, 1804.88 )
 scale = Vector2( 3.63578, 4.64729 )
-texture = ExtResource( 71 )
+texture = ExtResource( 35 )
 
 [node name="Sprite4" type="Sprite" parent="fondo/ParallaxBackground/capa6"]
 position = Vector2( 4775.64, 1811.28 )
 scale = Vector2( 3.58099, 4.53969 )
-texture = ExtResource( 71 )
+texture = ExtResource( 35 )
 
 [node name="cursor" type="Node2D" parent="."]
 editor/display_folded = true
-script = ExtResource( 72 )
+script = ExtResource( 36 )
 
 [node name="Sprite" type="Sprite" parent="cursor"]
 position = Vector2( -8.03736, 8.03736 )
 scale = Vector2( 0.497665, 0.497665 )
-texture = ExtResource( 73 )
+texture = ExtResource( 37 )
 
 [node name="suelo" type="Area2D" parent="." groups=[
 "enemy",
@@ -601,13 +344,13 @@ editor/display_folded = true
 [node name="moneda_1" type="Area2D" parent="objetos"]
 editor/display_folded = true
 position = Vector2( 640.848, 1969.78 )
-script = ExtResource( 74 )
+script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="objetos/moneda_1"]
-texture = ExtResource( 75 )
+texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_1"]
@@ -616,13 +359,13 @@ shape = SubResource( 10 )
 [node name="moneda_2" type="Area2D" parent="objetos"]
 editor/display_folded = true
 position = Vector2( 664.615, 1970.22 )
-script = ExtResource( 74 )
+script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="objetos/moneda_2"]
-texture = ExtResource( 75 )
+texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_2"]
@@ -631,13 +374,13 @@ shape = SubResource( 10 )
 [node name="moneda_3" type="Area2D" parent="objetos"]
 editor/display_folded = true
 position = Vector2( 687.501, 1970.66 )
-script = ExtResource( 74 )
+script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="objetos/moneda_3"]
-texture = ExtResource( 75 )
+texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_3"]
@@ -646,13 +389,13 @@ shape = SubResource( 10 )
 [node name="moneda_4" type="Area2D" parent="objetos"]
 editor/display_folded = true
 position = Vector2( 709.068, 1971.54 )
-script = ExtResource( 74 )
+script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="objetos/moneda_4"]
-texture = ExtResource( 75 )
+texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_4"]
@@ -661,13 +404,13 @@ shape = SubResource( 10 )
 [node name="moneda_5" type="Area2D" parent="objetos"]
 editor/display_folded = true
 position = Vector2( 731.074, 1971.54 )
-script = ExtResource( 74 )
+script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="objetos/moneda_5"]
-texture = ExtResource( 75 )
+texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_5"]
@@ -676,13 +419,13 @@ shape = SubResource( 10 )
 [node name="moneda_6" type="Area2D" parent="objetos"]
 editor/display_folded = true
 position = Vector2( 882.477, 1893.2 )
-script = ExtResource( 74 )
+script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="objetos/moneda_6"]
-texture = ExtResource( 75 )
+texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_6"]
@@ -691,13 +434,13 @@ shape = SubResource( 10 )
 [node name="moneda_7" type="Area2D" parent="objetos"]
 editor/display_folded = true
 position = Vector2( 911.966, 1893.2 )
-script = ExtResource( 74 )
+script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="objetos/moneda_7"]
-texture = ExtResource( 75 )
+texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_7"]
@@ -706,13 +449,13 @@ shape = SubResource( 10 )
 [node name="moneda_8" type="Area2D" parent="objetos"]
 editor/display_folded = true
 position = Vector2( 940.134, 1893.64 )
-script = ExtResource( 74 )
+script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="objetos/moneda_8"]
-texture = ExtResource( 75 )
+texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_8"]
@@ -721,13 +464,13 @@ shape = SubResource( 10 )
 [node name="moneda_9" type="Area2D" parent="objetos"]
 editor/display_folded = true
 position = Vector2( 1232.38, 1927.09 )
-script = ExtResource( 74 )
+script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="objetos/moneda_9"]
-texture = ExtResource( 75 )
+texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_9"]
@@ -736,13 +479,13 @@ shape = SubResource( 10 )
 [node name="moneda_10" type="Area2D" parent="objetos"]
 editor/display_folded = true
 position = Vector2( 1887.73, 1924.89 )
-script = ExtResource( 74 )
+script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="objetos/moneda_10"]
-texture = ExtResource( 75 )
+texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_10"]
@@ -751,13 +494,13 @@ shape = SubResource( 10 )
 [node name="moneda_11" type="Area2D" parent="objetos"]
 editor/display_folded = true
 position = Vector2( 1949.78, 1924.01 )
-script = ExtResource( 74 )
+script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="objetos/moneda_11"]
-texture = ExtResource( 75 )
+texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_11"]
@@ -766,13 +509,13 @@ shape = SubResource( 10 )
 [node name="moneda_12" type="Area2D" parent="objetos"]
 editor/display_folded = true
 position = Vector2( 2211.66, 1755.44 )
-script = ExtResource( 74 )
+script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="objetos/moneda_12"]
-texture = ExtResource( 75 )
+texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_12"]
@@ -781,13 +524,13 @@ shape = SubResource( 10 )
 [node name="moneda_13" type="Area2D" parent="objetos"]
 editor/display_folded = true
 position = Vector2( 2270.64, 1753.68 )
-script = ExtResource( 74 )
+script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="objetos/moneda_13"]
-texture = ExtResource( 75 )
+texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_13"]
@@ -796,13 +539,13 @@ shape = SubResource( 10 )
 [node name="moneda_14" type="Area2D" parent="objetos"]
 editor/display_folded = true
 position = Vector2( 2330.94, 1753.68 )
-script = ExtResource( 74 )
+script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="objetos/moneda_14"]
-texture = ExtResource( 75 )
+texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_14"]
@@ -811,13 +554,13 @@ shape = SubResource( 10 )
 [node name="moneda_15" type="Area2D" parent="objetos"]
 editor/display_folded = true
 position = Vector2( 2535.59, 1807.38 )
-script = ExtResource( 74 )
+script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="objetos/moneda_15"]
-texture = ExtResource( 75 )
+texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_15"]
@@ -826,13 +569,13 @@ shape = SubResource( 10 )
 [node name="moneda_16" type="Area2D" parent="objetos"]
 editor/display_folded = true
 position = Vector2( 2937.87, 1807.38 )
-script = ExtResource( 74 )
+script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="objetos/moneda_16"]
-texture = ExtResource( 75 )
+texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_16"]
@@ -841,13 +584,13 @@ shape = SubResource( 10 )
 [node name="moneda_17" type="Area2D" parent="objetos"]
 editor/display_folded = true
 position = Vector2( 3114.8, 1786.25 )
-script = ExtResource( 74 )
+script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="objetos/moneda_17"]
-texture = ExtResource( 75 )
+texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_17"]
@@ -856,13 +599,13 @@ shape = SubResource( 10 )
 [node name="moneda_18" type="Area2D" parent="objetos"]
 editor/display_folded = true
 position = Vector2( 3137.25, 1786.25 )
-script = ExtResource( 74 )
+script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="objetos/moneda_18"]
-texture = ExtResource( 75 )
+texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_18"]
@@ -871,13 +614,13 @@ shape = SubResource( 10 )
 [node name="moneda_19" type="Area2D" parent="objetos"]
 editor/display_folded = true
 position = Vector2( 3156.61, 1786.25 )
-script = ExtResource( 74 )
+script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="objetos/moneda_19"]
-texture = ExtResource( 75 )
+texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_19"]
@@ -886,60 +629,37 @@ shape = SubResource( 10 )
 [node name="moneda_20" type="Area2D" parent="objetos"]
 editor/display_folded = true
 position = Vector2( 3178.62, 1786.25 )
-script = ExtResource( 74 )
+script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="objetos/moneda_20"]
-texture = ExtResource( 75 )
+texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_20"]
 shape = SubResource( 10 )
 
-[connection signal="animation_finished" from="jugador/AnimatedSprite" to="jugador" method="_on_AnimatedSprite_animation_finished"]
-[connection signal="timeout" from="jugador/Timer" to="jugador" method="_on_Timer_timeout"]
 [connection signal="timeout" from="enemy/Timer" to="enemy" method="_on_Timer_timeout"]
 [connection signal="timeout" from="enemy2/Timer" to="enemy2" method="_on_Timer_timeout"]
-[connection signal="body_entered" from="suelo" to="jugador" method="_on_suelo_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_1" to="objetos/moneda_1" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_1" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_2" to="objetos/moneda_2" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_2" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_3" to="objetos/moneda_3" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_3" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_4" to="objetos/moneda_4" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_4" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_5" to="objetos/moneda_5" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_5" to="jugador" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_6" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_6" to="objetos/moneda_6" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_7" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_7" to="objetos/moneda_7" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_8" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_8" to="objetos/moneda_8" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_9" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_9" to="objetos/moneda_9" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_10" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_10" to="objetos/moneda_10" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_11" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_11" to="objetos/moneda_11" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_12" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_12" to="objetos/moneda_12" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_13" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_13" to="objetos/moneda_13" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_14" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_14" to="objetos/moneda_14" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_15" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_15" to="objetos/moneda_15" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_16" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_16" to="objetos/moneda_16" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_17" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_17" to="objetos/moneda_17" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_18" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_18" to="objetos/moneda_18" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_19" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_19" to="objetos/moneda_19" method="_on_moneda_1_body_entered"]
-[connection signal="body_entered" from="objetos/moneda_20" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_20" to="objetos/moneda_20" method="_on_moneda_1_body_entered"]
