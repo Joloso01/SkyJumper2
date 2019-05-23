@@ -1,35 +1,35 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://mundo.gd" type="Script" id=1]
 [ext_resource path="res://musica/mapa.wav" type="AudioStream" id=2]
 [ext_resource path="res://completo.tres" type="TileSet" id=3]
 [ext_resource path="res://escenas mundos/jugador.tscn" type="PackedScene" id=4]
 [ext_resource path="res://enemy.gd" type="Script" id=5]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_01.png" type="Texture" id=6]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_02.png" type="Texture" id=7]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_03.png" type="Texture" id=8]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_04.png" type="Texture" id=9]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_05.png" type="Texture" id=10]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_06.png" type="Texture" id=11]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_07.png" type="Texture" id=12]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_08.png" type="Texture" id=13]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_01.png" type="Texture" id=14]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_02.png" type="Texture" id=15]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_03.png" type="Texture" id=16]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_04.png" type="Texture" id=17]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_05.png" type="Texture" id=18]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_06.png" type="Texture" id=19]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_07.png" type="Texture" id=20]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_08.png" type="Texture" id=21]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_09.png" type="Texture" id=22]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_10.png" type="Texture" id=23]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_11.png" type="Texture" id=24]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_12.png" type="Texture" id=25]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_13.png" type="Texture" id=26]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_14.png" type="Texture" id=27]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_15.png" type="Texture" id=28]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_16.png" type="Texture" id=29]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_17.png" type="Texture" id=30]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_01.png" type="Texture" id=6]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_02.png" type="Texture" id=7]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_03.png" type="Texture" id=8]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_04.png" type="Texture" id=9]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_05.png" type="Texture" id=10]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_06.png" type="Texture" id=11]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_07.png" type="Texture" id=12]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_08.png" type="Texture" id=13]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_09.png" type="Texture" id=14]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_10.png" type="Texture" id=15]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_11.png" type="Texture" id=16]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_12.png" type="Texture" id=17]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_13.png" type="Texture" id=18]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_14.png" type="Texture" id=19]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_15.png" type="Texture" id=20]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_16.png" type="Texture" id=21]
+[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_17.png" type="Texture" id=22]
+[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_01.png" type="Texture" id=23]
+[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_02.png" type="Texture" id=24]
+[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_03.png" type="Texture" id=25]
+[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_04.png" type="Texture" id=26]
+[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_05.png" type="Texture" id=27]
+[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_06.png" type="Texture" id=28]
+[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_07.png" type="Texture" id=29]
+[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_08.png" type="Texture" id=30]
 [ext_resource path="res://MAPA/Grassy_Mountains_Parallax_Background-vnitti/layers_fullcolor/sky_fc.png" type="Texture" id=31]
 [ext_resource path="res://MAPA/Grassy_Mountains_Parallax_Background-vnitti/layers_fullcolor/far_mountains_fc.png" type="Texture" id=32]
 [ext_resource path="res://MAPA/Grassy_Mountains_Parallax_Background-vnitti/layers_fullcolor/grassy_mountains_fc.png" type="Texture" id=33]
@@ -39,28 +39,29 @@
 [ext_resource path="res://MENU PRINCIPAL/Cursor.png" type="Texture" id=37]
 [ext_resource path="res://moneda_1.gd" type="Script" id=38]
 [ext_resource path="res://MENU PRINCIPAL/Monedas/MonedaD.png" type="Texture" id=39]
+[ext_resource path="res://CambioNivel.tscn" type="PackedScene" id=40]
 
-[sub_resource type="SpriteFrames" id=7]
+[sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
-"loop": true,
-"name": "correr",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ) ],
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ) ],
 "loop": true,
 "name": "muerto",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ) ],
+"loop": true,
+"name": "correr",
+"speed": 5.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=8]
+[sub_resource type="CapsuleShape2D" id=2]
 radius = 5.8952
 height = 31.1194
 
-[sub_resource type="RectangleShape2D" id=9]
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 3934.41, 13.3799 )
 
-[sub_resource type="CircleShape2D" id=10]
+[sub_resource type="CircleShape2D" id=4]
 radius = 7.91135
 
 [node name="mundo" type="Node" groups=[
@@ -103,7 +104,7 @@ tile_set = ExtResource( 3 )
 cell_size = Vector2( 17, 15 )
 cell_quadrant_size = 18
 format = 1
-tile_data = PoolIntArray( 15270152, 125, 0, 15466753, 49, 0, 15466754, 49, 0, 15466755, 49, 0, 15466756, 49, 0, 15466757, 49, 0, 15466758, 49, 0, 15466759, 49, 0, 15466760, 49, 0, 15466761, 49, 0, 15466762, 49, 0, 15466763, 127, 0, 15466764, 49, 0, 15466765, 49, 0, 15466766, 49, 0, 15466767, 49, 0, 15466768, 49, 0, 15466769, 49, 0, 15466770, 49, 0, 15466771, 49, 0, 15532395, 125, 0, 15532412, 125, 0, 15532422, 125, 0, 15663496, 117, 0, 15663501, 117, 0, 15729010, 108, 0, 15729018, 108, 0, 15729028, 108, 0, 16318704, 125, 0, 16515309, 49, 0, 16515310, 49, 0, 16515311, 49, 0, 16515313, 49, 0, 16515314, 127, 0, 16777443, 125, 0, 16973852, 125, 0, 16973864, 125, 0, 16973878, 125, 0, 16973974, 125, 0, 16974007, 125, 0, 16974034, 125, 0, 17104928, 117, 0, 17104943, 117, 0, 17170458, 49, 0, 17170459, 49, 0, 17170460, 49, 0, 17170461, 49, 0, 17170462, 49, 0, 17170463, 49, 0, 17170464, 49, 0, 17170465, 49, 0, 17170466, 49, 0, 17170467, 49, 0, 17170468, 49, 0, 17170469, 49, 0, 17170470, 49, 0, 17170471, 49, 0, 17170472, 49, 0, 17170473, 49, 0, 17170474, 49, 0, 17170475, 49, 0, 17170476, 49, 0, 17170477, 49, 0, 17170478, 49, 0, 17170479, 49, 0, 17170480, 49, 0, 17170481, 49, 0, 17170482, 49, 0, 17170483, 49, 0, 17170484, 49, 0, 17170485, 49, 0, 17170486, 49, 0, 17170487, 49, 0, 17170488, 49, 0, 17170489, 108, 0, 17170490, 49, 0, 17170491, 49, 0, 17170492, 49, 0, 17170493, 49, 0, 17170494, 49, 0, 17170495, 127, 0, 17170582, 44, 0, 17170583, 44, 0, 17170584, 44, 0, 17170585, 44, 0, 17170586, 44, 0, 17170587, 44, 0, 17170588, 44, 0, 17170589, 44, 0, 17170590, 44, 0, 17170591, 44, 0, 17170592, 44, 0, 17170593, 44, 0, 17170594, 44, 0, 17170595, 44, 0, 17170596, 44, 0, 17170597, 44, 0, 17170598, 44, 0, 17170599, 44, 0, 17170600, 44, 0, 17170601, 44, 0, 17170602, 44, 0, 17170603, 44, 0, 17170604, 44, 0, 17170605, 44, 0, 17170606, 44, 0, 17170607, 44, 0, 17170608, 44, 0, 17170609, 44, 0, 17170610, 44, 0, 17170611, 44, 0, 17170612, 44, 0, 17170613, 44, 0, 17170614, 44, 0, 17170615, 44, 0, 17170616, 44, 0, 17170617, 44, 0, 17170618, 44, 0, 17170619, 44, 0, 17170620, 44, 0, 17170621, 44, 0, 17170622, 44, 0, 17170623, 44, 0, 17170624, 44, 0, 17170625, 44, 0, 17170626, 44, 0, 17170627, 44, 0, 17170628, 44, 0, 17170629, 44, 0, 17170630, 44, 0, 17170631, 44, 0, 17170632, 44, 0, 17170633, 44, 0, 17170634, 44, 0, 17170635, 44, 0, 17170636, 44, 0, 17170637, 44, 0, 17170638, 44, 0, 17170639, 44, 0, 17170640, 44, 0, 17170641, 44, 0, 17170642, 44, 0, 17170643, 44, 0, 17170644, 44, 0, 17170645, 44, 0, 17170646, 44, 0, 17170647, 44, 0, 17170648, 44, 0, 17170649, 44, 0, 17170650, 44, 0, 17170651, 44, 0, 17367111, 49, 0, 17367112, 49, 0, 17367113, 49, 0, 17367114, 49, 0, 17367115, 49, 0, 17367116, 49, 0, 17367117, 49, 0, 17367118, 49, 0, 17367119, 49, 0, 17367120, 49, 0, 17367121, 126, 0, 17367124, 49, 0, 17367125, 49, 0, 17367126, 49, 0, 17367127, 108, 0, 17367128, 49, 0, 17367129, 49, 0, 17367130, 49, 0, 17367131, 49, 0, 17367132, 49, 0, 17367133, 49, 0, 17367134, 49, 0, 17367135, 49, 0 )
+tile_data = PoolIntArray( 15270152, 125, 0, 15466753, 49, 0, 15466754, 49, 0, 15466755, 49, 0, 15466756, 49, 0, 15466757, 49, 0, 15466758, 49, 0, 15466759, 49, 0, 15466760, 49, 0, 15466761, 49, 0, 15466762, 49, 0, 15466763, 127, 0, 15466764, 49, 0, 15466765, 49, 0, 15466766, 49, 0, 15466767, 49, 0, 15466768, 49, 0, 15466769, 49, 0, 15466770, 49, 0, 15466771, 49, 0, 15532395, 125, 0, 15532412, 125, 0, 15532422, 125, 0, 15663495, 117, 0, 15663501, 117, 0, 15729010, 108, 0, 15729018, 108, 0, 15729028, 108, 0, 16318704, 125, 0, 16515309, 49, 0, 16515310, 49, 0, 16515311, 49, 0, 16515313, 49, 0, 16515314, 127, 0, 16777443, 125, 0, 16973852, 125, 0, 16973864, 125, 0, 16973878, 125, 0, 16973974, 125, 0, 16974007, 125, 0, 16974034, 125, 0, 17104928, 117, 0, 17104943, 117, 0, 17170458, 49, 0, 17170459, 49, 0, 17170460, 49, 0, 17170461, 49, 0, 17170462, 49, 0, 17170463, 49, 0, 17170464, 49, 0, 17170465, 49, 0, 17170466, 49, 0, 17170467, 49, 0, 17170468, 49, 0, 17170469, 49, 0, 17170470, 49, 0, 17170471, 49, 0, 17170472, 49, 0, 17170473, 49, 0, 17170474, 49, 0, 17170475, 49, 0, 17170476, 49, 0, 17170477, 49, 0, 17170478, 49, 0, 17170479, 49, 0, 17170480, 49, 0, 17170481, 49, 0, 17170482, 49, 0, 17170483, 49, 0, 17170484, 49, 0, 17170485, 49, 0, 17170486, 49, 0, 17170487, 49, 0, 17170488, 49, 0, 17170489, 108, 0, 17170490, 49, 0, 17170491, 49, 0, 17170492, 49, 0, 17170493, 49, 0, 17170494, 49, 0, 17170495, 127, 0, 17170582, 44, 0, 17170583, 44, 0, 17170584, 44, 0, 17170585, 44, 0, 17170586, 44, 0, 17170587, 44, 0, 17170588, 44, 0, 17170589, 44, 0, 17170590, 44, 0, 17170591, 44, 0, 17170592, 44, 0, 17170593, 44, 0, 17170594, 44, 0, 17170595, 44, 0, 17170596, 44, 0, 17170597, 44, 0, 17170598, 44, 0, 17170599, 44, 0, 17170600, 44, 0, 17170601, 44, 0, 17170602, 44, 0, 17170603, 44, 0, 17170604, 44, 0, 17170605, 44, 0, 17170606, 44, 0, 17170607, 44, 0, 17170608, 44, 0, 17170609, 44, 0, 17170610, 44, 0, 17170611, 44, 0, 17170612, 44, 0, 17170613, 44, 0, 17170614, 44, 0, 17170615, 44, 0, 17170616, 44, 0, 17170617, 44, 0, 17170618, 44, 0, 17170619, 44, 0, 17170620, 44, 0, 17170621, 44, 0, 17170622, 44, 0, 17170623, 44, 0, 17170624, 44, 0, 17170625, 44, 0, 17170626, 44, 0, 17170627, 44, 0, 17170628, 44, 0, 17170629, 44, 0, 17170630, 44, 0, 17170631, 44, 0, 17170632, 44, 0, 17170633, 44, 0, 17170634, 44, 0, 17170635, 44, 0, 17170636, 44, 0, 17170637, 44, 0, 17170638, 44, 0, 17170639, 44, 0, 17170640, 44, 0, 17170641, 44, 0, 17170642, 44, 0, 17170643, 44, 0, 17170644, 44, 0, 17170645, 44, 0, 17170646, 44, 0, 17170647, 44, 0, 17170648, 44, 0, 17170649, 44, 0, 17170650, 44, 0, 17170651, 44, 0, 17367111, 49, 0, 17367112, 49, 0, 17367113, 49, 0, 17367114, 49, 0, 17367115, 49, 0, 17367116, 49, 0, 17367117, 49, 0, 17367118, 49, 0, 17367119, 49, 0, 17367120, 49, 0, 17367121, 126, 0, 17367124, 49, 0, 17367125, 49, 0, 17367126, 49, 0, 17367127, 108, 0, 17367128, 49, 0, 17367129, 49, 0, 17367130, 49, 0, 17367131, 49, 0, 17367132, 49, 0, 17367133, 49, 0, 17367134, 49, 0, 17367135, 49, 0 )
 
 [node name="jugador" parent="." instance=ExtResource( 4 )]
 
@@ -123,14 +124,14 @@ hp = 3
 [node name="AnimatedSprite" type="AnimatedSprite" parent="enemy"]
 position = Vector2( 10.9547, -10.9547 )
 scale = Vector2( 1.34233, 1.34233 )
-frames = SubResource( 7 )
+frames = SubResource( 1 )
 animation = "muerto"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="enemy"]
 position = Vector2( 7.95239, -4.08154 )
 rotation = -1.55947
 scale = Vector2( 2.50882, 0.512836 )
-shape = SubResource( 8 )
+shape = SubResource( 2 )
 
 [node name="RayCast2D" type="RayCast2D" parent="enemy"]
 position = Vector2( 17.7537, -0.99192 )
@@ -157,14 +158,14 @@ hp = 2
 [node name="AnimatedSprite" type="AnimatedSprite" parent="enemy2"]
 position = Vector2( 10.9547, -10.9547 )
 scale = Vector2( 1.34233, 1.34233 )
-frames = SubResource( 7 )
+frames = SubResource( 1 )
 animation = "muerto"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="enemy2"]
 position = Vector2( 7.95239, -4.08154 )
 rotation = -1.55947
 scale = Vector2( 2.50882, 0.512836 )
-shape = SubResource( 8 )
+shape = SubResource( 2 )
 
 [node name="RayCast2D" type="RayCast2D" parent="enemy2"]
 position = Vector2( 17.7537, -0.99192 )
@@ -336,7 +337,7 @@ position = Vector2( 160.134, 2279.43 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="suelo"]
 position = Vector2( 1247.93, 9.63037 )
-shape = SubResource( 9 )
+shape = SubResource( 3 )
 
 [node name="objetos" type="Node" parent="."]
 editor/display_folded = true
@@ -354,7 +355,7 @@ texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_1"]
-shape = SubResource( 10 )
+shape = SubResource( 4 )
 
 [node name="moneda_2" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -369,7 +370,7 @@ texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_2"]
-shape = SubResource( 10 )
+shape = SubResource( 4 )
 
 [node name="moneda_3" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -384,7 +385,7 @@ texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_3"]
-shape = SubResource( 10 )
+shape = SubResource( 4 )
 
 [node name="moneda_4" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -399,7 +400,7 @@ texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_4"]
-shape = SubResource( 10 )
+shape = SubResource( 4 )
 
 [node name="moneda_5" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -414,7 +415,7 @@ texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_5"]
-shape = SubResource( 10 )
+shape = SubResource( 4 )
 
 [node name="moneda_6" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -429,7 +430,7 @@ texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_6"]
-shape = SubResource( 10 )
+shape = SubResource( 4 )
 
 [node name="moneda_7" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -444,7 +445,7 @@ texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_7"]
-shape = SubResource( 10 )
+shape = SubResource( 4 )
 
 [node name="moneda_8" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -459,7 +460,7 @@ texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_8"]
-shape = SubResource( 10 )
+shape = SubResource( 4 )
 
 [node name="moneda_9" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -474,7 +475,7 @@ texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_9"]
-shape = SubResource( 10 )
+shape = SubResource( 4 )
 
 [node name="moneda_10" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -489,7 +490,7 @@ texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_10"]
-shape = SubResource( 10 )
+shape = SubResource( 4 )
 
 [node name="moneda_11" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -504,7 +505,7 @@ texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_11"]
-shape = SubResource( 10 )
+shape = SubResource( 4 )
 
 [node name="moneda_12" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -519,7 +520,7 @@ texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_12"]
-shape = SubResource( 10 )
+shape = SubResource( 4 )
 
 [node name="moneda_13" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -534,7 +535,7 @@ texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_13"]
-shape = SubResource( 10 )
+shape = SubResource( 4 )
 
 [node name="moneda_14" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -549,7 +550,7 @@ texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_14"]
-shape = SubResource( 10 )
+shape = SubResource( 4 )
 
 [node name="moneda_15" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -564,7 +565,7 @@ texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_15"]
-shape = SubResource( 10 )
+shape = SubResource( 4 )
 
 [node name="moneda_16" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -579,7 +580,7 @@ texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_16"]
-shape = SubResource( 10 )
+shape = SubResource( 4 )
 
 [node name="moneda_17" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -594,7 +595,7 @@ texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_17"]
-shape = SubResource( 10 )
+shape = SubResource( 4 )
 
 [node name="moneda_18" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -609,7 +610,7 @@ texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_18"]
-shape = SubResource( 10 )
+shape = SubResource( 4 )
 
 [node name="moneda_19" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -624,7 +625,7 @@ texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_19"]
-shape = SubResource( 10 )
+shape = SubResource( 4 )
 
 [node name="moneda_20" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -639,7 +640,11 @@ texture = ExtResource( 39 )
 hframes = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_20"]
-shape = SubResource( 10 )
+shape = SubResource( 4 )
+
+[node name="CambioNivel" parent="." instance=ExtResource( 40 )]
+position = Vector2( 3361.73, 1786.73 )
+mapa_select = "res://mundo2.tscn"
 
 [connection signal="timeout" from="enemy/Timer" to="enemy" method="_on_Timer_timeout"]
 [connection signal="timeout" from="enemy2/Timer" to="enemy2" method="_on_Timer_timeout"]
