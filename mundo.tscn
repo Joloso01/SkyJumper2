@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=86 format=2]
 
 [ext_resource path="res://mundo.gd" type="Script" id=1]
 [ext_resource path="res://musica/mapa.wav" type="AudioStream" id=2]
@@ -64,6 +64,662 @@ extents = Vector2( 3934.41, 13.3799 )
 [sub_resource type="CircleShape2D" id=4]
 radius = 7.91135
 
+[sub_resource type="Animation" id=5]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=12]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=15]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=16]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=17]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=18]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=19]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=20]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=21]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=22]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=23]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=24]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=25]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=26]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=27]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=28]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=29]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=30]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=31]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=32]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=33]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=34]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=35]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=36]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=37]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=38]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=39]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=40]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=41]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=42]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=43]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=44]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
+[sub_resource type="Animation" id=45]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
 [node name="mundo" type="Node" groups=[
 "mundo",
 ]]
@@ -109,8 +765,8 @@ tile_data = PoolIntArray( 15270152, 125, 0, 15466753, 49, 0, 15466754, 49, 0, 15
 [node name="jugador" parent="." instance=ExtResource( 4 )]
 
 [node name="enemy" type="KinematicBody2D" parent="." groups=[
-"enemy",
 "enemigo",
+"enemy",
 ]]
 editor/display_folded = true
 position = Vector2( 1649.1, 1886.68 )
@@ -143,8 +799,8 @@ wait_time = 0.4
 one_shot = true
 
 [node name="enemy2" type="KinematicBody2D" parent="." groups=[
-"enemy",
 "enemigo",
+"enemy",
 ]]
 editor/display_folded = true
 position = Vector2( 2751.2, 1798.26 )
@@ -180,7 +836,6 @@ one_shot = true
 editor/display_folded = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="fondo"]
-editor/display_folded = true
 
 [node name="capa1" type="ParallaxLayer" parent="fondo/ParallaxBackground"]
 editor/display_folded = true
@@ -218,7 +873,7 @@ scale = Vector2( 3.44519, 3.02497 )
 texture = ExtResource( 33 )
 
 [node name="Sprite2" type="Sprite" parent="fondo/ParallaxBackground/capa3"]
-position = Vector2( 1608.71, 1942.46 )
+position = Vector2( 1606.82, 1942.46 )
 scale = Vector2( 2.80558, 2.58043 )
 texture = ExtResource( 33 )
 
@@ -329,8 +984,8 @@ scale = Vector2( 0.497665, 0.497665 )
 texture = ExtResource( 37 )
 
 [node name="suelo" type="Area2D" parent="." groups=[
-"enemy",
 "enemigo",
+"enemy",
 ]]
 editor/display_folded = true
 position = Vector2( 160.134, 2279.43 )
@@ -353,13 +1008,17 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="objetos/moneda_1"]
 texture = ExtResource( 39 )
 hframes = 5
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_1"]
 shape = SubResource( 4 )
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_1"]
+anims/quieto = SubResource( 5 )
+
 [node name="moneda_2" type="Area2D" parent="objetos"]
 editor/display_folded = true
-position = Vector2( 664.615, 1970.22 )
+position = Vector2( 665.256, 1969.78 )
 script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
@@ -368,13 +1027,17 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="objetos/moneda_2"]
 texture = ExtResource( 39 )
 hframes = 5
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_2"]
 shape = SubResource( 4 )
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_2"]
+anims/quieto = SubResource( 6 )
+
 [node name="moneda_3" type="Area2D" parent="objetos"]
 editor/display_folded = true
-position = Vector2( 687.501, 1970.66 )
+position = Vector2( 687.533, 1969.78 )
 script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
@@ -383,13 +1046,17 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="objetos/moneda_3"]
 texture = ExtResource( 39 )
 hframes = 5
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_3"]
 shape = SubResource( 4 )
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_3"]
+anims/quieto = SubResource( 7 )
+
 [node name="moneda_4" type="Area2D" parent="objetos"]
 editor/display_folded = true
-position = Vector2( 709.068, 1971.54 )
+position = Vector2( 708.066, 1969.78 )
 script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
@@ -398,13 +1065,17 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="objetos/moneda_4"]
 texture = ExtResource( 39 )
 hframes = 5
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_4"]
 shape = SubResource( 4 )
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_4"]
+anims/quieto = SubResource( 8 )
+
 [node name="moneda_5" type="Area2D" parent="objetos"]
 editor/display_folded = true
-position = Vector2( 731.074, 1971.54 )
+position = Vector2( 729.762, 1969.78 )
 script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
@@ -413,13 +1084,17 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="objetos/moneda_5"]
 texture = ExtResource( 39 )
 hframes = 5
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_5"]
 shape = SubResource( 4 )
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_5"]
+anims/quieto = SubResource( 9 )
+
 [node name="moneda_6" type="Area2D" parent="objetos"]
 editor/display_folded = true
-position = Vector2( 882.477, 1893.2 )
+position = Vector2( 755.913, 1969.78 )
 script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
@@ -428,13 +1103,17 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="objetos/moneda_6"]
 texture = ExtResource( 39 )
 hframes = 5
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_6"]
 shape = SubResource( 4 )
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_6"]
+anims/quieto = SubResource( 10 )
+
 [node name="moneda_7" type="Area2D" parent="objetos"]
 editor/display_folded = true
-position = Vector2( 911.966, 1893.2 )
+position = Vector2( 917.714, 1915.8 )
 script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
@@ -443,13 +1122,17 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="objetos/moneda_7"]
 texture = ExtResource( 39 )
 hframes = 5
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_7"]
 shape = SubResource( 4 )
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_7"]
+anims/quieto = SubResource( 11 )
+
 [node name="moneda_8" type="Area2D" parent="objetos"]
 editor/display_folded = true
-position = Vector2( 940.134, 1893.64 )
+position = Vector2( 936.155, 1915.8 )
 script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
@@ -458,13 +1141,17 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="objetos/moneda_8"]
 texture = ExtResource( 39 )
 hframes = 5
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_8"]
 shape = SubResource( 4 )
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_8"]
+anims/quieto = SubResource( 12 )
+
 [node name="moneda_9" type="Area2D" parent="objetos"]
 editor/display_folded = true
-position = Vector2( 1232.38, 1927.09 )
+position = Vector2( 953.302, 1915.8 )
 script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
@@ -473,13 +1160,17 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="objetos/moneda_9"]
 texture = ExtResource( 39 )
 hframes = 5
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_9"]
 shape = SubResource( 4 )
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_9"]
+anims/quieto = SubResource( 13 )
+
 [node name="moneda_10" type="Area2D" parent="objetos"]
 editor/display_folded = true
-position = Vector2( 1887.73, 1924.89 )
+position = Vector2( 971.097, 1915.8 )
 script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
@@ -488,13 +1179,17 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="objetos/moneda_10"]
 texture = ExtResource( 39 )
 hframes = 5
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_10"]
 shape = SubResource( 4 )
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_10"]
+anims/quieto = SubResource( 14 )
+
 [node name="moneda_11" type="Area2D" parent="objetos"]
 editor/display_folded = true
-position = Vector2( 1949.78, 1924.01 )
+position = Vector2( 988.891, 1915.8 )
 script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
@@ -503,13 +1198,17 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="objetos/moneda_11"]
 texture = ExtResource( 39 )
 hframes = 5
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_11"]
 shape = SubResource( 4 )
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_11"]
+anims/quieto = SubResource( 15 )
+
 [node name="moneda_12" type="Area2D" parent="objetos"]
 editor/display_folded = true
-position = Vector2( 2211.66, 1755.44 )
+position = Vector2( 1215.36, 1933.27 )
 script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
@@ -518,13 +1217,17 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="objetos/moneda_12"]
 texture = ExtResource( 39 )
 hframes = 5
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_12"]
 shape = SubResource( 4 )
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_12"]
+anims/quieto = SubResource( 16 )
+
 [node name="moneda_13" type="Area2D" parent="objetos"]
 editor/display_folded = true
-position = Vector2( 2270.64, 1753.68 )
+position = Vector2( 1232.84, 1933.27 )
 script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
@@ -533,13 +1236,17 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="objetos/moneda_13"]
 texture = ExtResource( 39 )
 hframes = 5
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_13"]
 shape = SubResource( 4 )
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_13"]
+anims/quieto = SubResource( 17 )
+
 [node name="moneda_14" type="Area2D" parent="objetos"]
 editor/display_folded = true
-position = Vector2( 2330.94, 1753.68 )
+position = Vector2( 1252.57, 1933.27 )
 script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
@@ -548,13 +1255,17 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="objetos/moneda_14"]
 texture = ExtResource( 39 )
 hframes = 5
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_14"]
 shape = SubResource( 4 )
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_14"]
+anims/quieto = SubResource( 18 )
+
 [node name="moneda_15" type="Area2D" parent="objetos"]
 editor/display_folded = true
-position = Vector2( 2535.59, 1807.38 )
+position = Vector2( 1445.4, 1909.65 )
 script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
@@ -563,13 +1274,17 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="objetos/moneda_15"]
 texture = ExtResource( 39 )
 hframes = 5
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_15"]
 shape = SubResource( 4 )
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_15"]
+anims/quieto = SubResource( 19 )
+
 [node name="moneda_16" type="Area2D" parent="objetos"]
 editor/display_folded = true
-position = Vector2( 2937.87, 1807.38 )
+position = Vector2( 1461.9, 1909.65 )
 script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
@@ -578,13 +1293,17 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="objetos/moneda_16"]
 texture = ExtResource( 39 )
 hframes = 5
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_16"]
 shape = SubResource( 4 )
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_16"]
+anims/quieto = SubResource( 20 )
+
 [node name="moneda_17" type="Area2D" parent="objetos"]
 editor/display_folded = true
-position = Vector2( 3114.8, 1786.25 )
+position = Vector2( 1480.01, 1909.65 )
 script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
@@ -593,13 +1312,17 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="objetos/moneda_17"]
 texture = ExtResource( 39 )
 hframes = 5
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_17"]
 shape = SubResource( 4 )
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_17"]
+anims/quieto = SubResource( 21 )
+
 [node name="moneda_18" type="Area2D" parent="objetos"]
 editor/display_folded = true
-position = Vector2( 3137.25, 1786.25 )
+position = Vector2( 1688.37, 1905.12 )
 script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
@@ -608,13 +1331,17 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="objetos/moneda_18"]
 texture = ExtResource( 39 )
 hframes = 5
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_18"]
 shape = SubResource( 4 )
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_18"]
+anims/quieto = SubResource( 22 )
+
 [node name="moneda_19" type="Area2D" parent="objetos"]
 editor/display_folded = true
-position = Vector2( 3156.61, 1786.25 )
+position = Vector2( 1704.55, 1905.12 )
 script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
@@ -623,13 +1350,17 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="objetos/moneda_19"]
 texture = ExtResource( 39 )
 hframes = 5
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_19"]
 shape = SubResource( 4 )
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_19"]
+anims/quieto = SubResource( 23 )
+
 [node name="moneda_20" type="Area2D" parent="objetos"]
 editor/display_folded = true
-position = Vector2( 3178.62, 1786.25 )
+position = Vector2( 1721.69, 1905.12 )
 script = ExtResource( 38 )
 __meta__ = {
 "_edit_group_": true
@@ -638,33 +1369,498 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="objetos/moneda_20"]
 texture = ExtResource( 39 )
 hframes = 5
+frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_20"]
 shape = SubResource( 4 )
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_20"]
+anims/quieto = SubResource( 24 )
+
+[node name="moneda_21" type="Area2D" parent="objetos"]
+editor/display_folded = true
+position = Vector2( 1887.34, 1930.36 )
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="objetos/moneda_21"]
+texture = ExtResource( 39 )
+hframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_21"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_21"]
+anims/quieto = SubResource( 25 )
+
+[node name="moneda_22" type="Area2D" parent="objetos"]
+editor/display_folded = true
+position = Vector2( 1914.52, 1930.36 )
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="objetos/moneda_22"]
+texture = ExtResource( 39 )
+hframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_22"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_22"]
+anims/quieto = SubResource( 26 )
+
+[node name="moneda_23" type="Area2D" parent="objetos"]
+editor/display_folded = true
+position = Vector2( 1954.32, 1930.36 )
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="objetos/moneda_23"]
+texture = ExtResource( 39 )
+hframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_23"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_23"]
+anims/quieto = SubResource( 27 )
+
+[node name="moneda_24" type="Area2D" parent="objetos"]
+editor/display_folded = true
+position = Vector2( 2027.14, 1880.55 )
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="objetos/moneda_24"]
+texture = ExtResource( 39 )
+hframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_24"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_24"]
+anims/quieto = SubResource( 28 )
+
+[node name="moneda_25" type="Area2D" parent="objetos"]
+editor/display_folded = true
+position = Vector2( 2204.88, 1760.55 )
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="objetos/moneda_25"]
+texture = ExtResource( 39 )
+hframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_25"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_25"]
+anims/quieto = SubResource( 29 )
+
+[node name="moneda_26" type="Area2D" parent="objetos"]
+editor/display_folded = true
+position = Vector2( 2224.5, 1760.55 )
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="objetos/moneda_26"]
+texture = ExtResource( 39 )
+hframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_26"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_26"]
+anims/quieto = SubResource( 30 )
+
+[node name="moneda_27" type="Area2D" parent="objetos"]
+editor/display_folded = true
+position = Vector2( 2269.78, 1760.55 )
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="objetos/moneda_27"]
+texture = ExtResource( 39 )
+hframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_27"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_27"]
+anims/quieto = SubResource( 31 )
+
+[node name="moneda_28" type="Area2D" parent="objetos"]
+editor/display_folded = true
+position = Vector2( 2290.54, 1760.55 )
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="objetos/moneda_28"]
+texture = ExtResource( 39 )
+hframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_28"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_28"]
+anims/quieto = SubResource( 32 )
+
+[node name="moneda_29" type="Area2D" parent="objetos"]
+editor/display_folded = true
+position = Vector2( 2309.03, 1760.55 )
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="objetos/moneda_29"]
+texture = ExtResource( 39 )
+hframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_29"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_29"]
+anims/quieto = SubResource( 33 )
+
+[node name="moneda_30" type="Area2D" parent="objetos"]
+editor/display_folded = true
+position = Vector2( 2329.03, 1760.55 )
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="objetos/moneda_30"]
+texture = ExtResource( 39 )
+hframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_30"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_30"]
+anims/quieto = SubResource( 34 )
+
+[node name="moneda_31" type="Area2D" parent="objetos"]
+editor/display_folded = true
+position = Vector2( 2533.55, 1811.11 )
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="objetos/moneda_31"]
+texture = ExtResource( 39 )
+hframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_31"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_31"]
+anims/quieto = SubResource( 35 )
+
+[node name="moneda_32" type="Area2D" parent="objetos"]
+editor/display_folded = true
+position = Vector2( 2937.7, 1809.98 )
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="objetos/moneda_32"]
+texture = ExtResource( 39 )
+hframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_32"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_32"]
+anims/quieto = SubResource( 36 )
+
+[node name="moneda_33" type="Area2D" parent="objetos"]
+editor/display_folded = true
+position = Vector2( 2956.94, 1809.98 )
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="objetos/moneda_33"]
+texture = ExtResource( 39 )
+hframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_33"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_33"]
+anims/quieto = SubResource( 37 )
+
+[node name="moneda_34" type="Area2D" parent="objetos"]
+editor/display_folded = true
+position = Vector2( 2975.81, 1809.98 )
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="objetos/moneda_34"]
+texture = ExtResource( 39 )
+hframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_34"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_34"]
+anims/quieto = SubResource( 38 )
+
+[node name="moneda_35" type="Area2D" parent="objetos"]
+editor/display_folded = true
+position = Vector2( 3115.46, 1784.89 )
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="objetos/moneda_35"]
+texture = ExtResource( 39 )
+hframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_35"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_35"]
+anims/quieto = SubResource( 39 )
+
+[node name="moneda_36" type="Area2D" parent="objetos"]
+editor/display_folded = true
+position = Vector2( 3138.04, 1784.89 )
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="objetos/moneda_36"]
+texture = ExtResource( 39 )
+hframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_36"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_36"]
+anims/quieto = SubResource( 40 )
+
+[node name="moneda_37" type="Area2D" parent="objetos"]
+editor/display_folded = true
+position = Vector2( 3159.37, 1784.89 )
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="objetos/moneda_37"]
+texture = ExtResource( 39 )
+hframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_37"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_37"]
+anims/quieto = SubResource( 41 )
+
+[node name="moneda_38" type="Area2D" parent="objetos"]
+editor/display_folded = true
+position = Vector2( 3250.1, 1784.89 )
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="objetos/moneda_38"]
+texture = ExtResource( 39 )
+hframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_38"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_38"]
+anims/quieto = SubResource( 42 )
+
+[node name="moneda_39" type="Area2D" parent="objetos"]
+editor/display_folded = true
+position = Vector2( 3268.91, 1784.89 )
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="objetos/moneda_39"]
+texture = ExtResource( 39 )
+hframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_39"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_39"]
+anims/quieto = SubResource( 43 )
+
+[node name="moneda_40" type="Area2D" parent="objetos"]
+editor/display_folded = true
+position = Vector2( 3286.06, 1784.89 )
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="objetos/moneda_40"]
+texture = ExtResource( 39 )
+hframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_40"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_40"]
+anims/quieto = SubResource( 44 )
+
+[node name="moneda_41" type="Area2D" parent="objetos"]
+editor/display_folded = true
+position = Vector2( 3304.45, 1784.89 )
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="objetos/moneda_41"]
+texture = ExtResource( 39 )
+hframes = 5
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="objetos/moneda_41"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_41"]
+anims/quieto = SubResource( 45 )
+
 [node name="CambioNivel" parent="." instance=ExtResource( 40 )]
 position = Vector2( 3361.73, 1786.73 )
 mapa_select = "res://mundo2.tscn"
-
 [connection signal="timeout" from="enemy/Timer" to="enemy" method="_on_Timer_timeout"]
 [connection signal="timeout" from="enemy2/Timer" to="enemy2" method="_on_Timer_timeout"]
+[connection signal="body_entered" from="suelo" to="jugador" method="_on_suelo_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_1" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_1" to="objetos/moneda_1" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_2" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_2" to="objetos/moneda_2" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_3" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_3" to="objetos/moneda_3" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_4" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_4" to="objetos/moneda_4" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_5" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_5" to="objetos/moneda_5" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_6" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_6" to="objetos/moneda_6" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_7" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_7" to="objetos/moneda_7" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_8" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_8" to="objetos/moneda_8" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_9" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_9" to="objetos/moneda_9" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_10" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_10" to="objetos/moneda_10" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_11" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_11" to="objetos/moneda_11" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_12" to="objetos/moneda_12" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_12" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_13" to="objetos/moneda_13" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_13" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_14" to="objetos/moneda_14" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_14" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_15" to="objetos/moneda_15" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_15" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_16" to="objetos/moneda_16" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_16" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_17" to="objetos/moneda_17" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_17" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_18" to="objetos/moneda_18" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_18" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_19" to="objetos/moneda_19" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_19" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_20" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_20" to="objetos/moneda_20" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_21" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_21" to="objetos/moneda_21" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_22" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_22" to="objetos/moneda_22" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_23" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_23" to="objetos/moneda_23" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_24" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_24" to="objetos/moneda_24" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_25" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_25" to="objetos/moneda_25" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_26" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_26" to="objetos/moneda_26" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_27" to="objetos/moneda_27" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_27" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_28" to="objetos/moneda_28" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_28" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_29" to="objetos/moneda_29" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_29" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_30" to="objetos/moneda_30" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_30" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_31" to="objetos/moneda_31" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_31" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_32" to="objetos/moneda_32" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_32" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_33" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_33" to="objetos/moneda_33" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_34" to="objetos/moneda_34" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_34" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_35" to="objetos/moneda_35" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_35" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_36" to="objetos/moneda_36" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_36" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_37" to="objetos/moneda_37" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_37" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_38" to="objetos/moneda_38" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_38" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_39" to="objetos/moneda_39" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_39" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_40" to="objetos/moneda_40" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_40" to="jugador" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_41" to="objetos/moneda_41" method="_on_moneda_1_body_entered"]
+[connection signal="body_entered" from="objetos/moneda_41" to="jugador" method="_on_moneda_1_body_entered"]

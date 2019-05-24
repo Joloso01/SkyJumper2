@@ -116,6 +116,5 @@ script = ExtResource( 8 )
 position = Vector2( -3.01139, 3.01139 )
 scale = Vector2( 0.811788, 0.811788 )
 texture = ExtResource( 9 )
-
 [connection signal="pressed" from="VBoxContainer/jugar" to="Control" method="_on_jugar_pressed"]
 [connection signal="pressed" from="VBoxContainer/salir" to="Control" method="_on_salir_pressed"]

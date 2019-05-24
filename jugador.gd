@@ -152,10 +152,10 @@ func _on_Timer_timeout():
 
 
 func _on_suelo_body_entered(body):
-	get_tree().change_scene("muerto.tscn")
+	muerto()
 
 func _on_moneda_1_body_entered(body):
-	puntos += 1
+	puntos += 2
 	print(puntos)
 	
 
