@@ -1,0 +1,149 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://MAPA/Grassy_Mountains_Parallax_Background-vnitti/layers_fullcolor/sky_fc.png" type="Texture" id=1]
+[ext_resource path="res://MAPA/Grassy_Mountains_Parallax_Background-vnitti/layers_fullcolor/far_mountains_fc.png" type="Texture" id=2]
+[ext_resource path="res://MAPA/Grassy_Mountains_Parallax_Background-vnitti/layers_fullcolor/grassy_mountains_fc.png" type="Texture" id=3]
+[ext_resource path="res://MAPA/Grassy_Mountains_Parallax_Background-vnitti/layers_fullcolor/clouds_mid_fc.png" type="Texture" id=4]
+[ext_resource path="res://MAPA/Grassy_Mountains_Parallax_Background-vnitti/layers_fullcolor/clouds_front_fc.png" type="Texture" id=5]
+
+[node name="fondo" type="CanvasLayer"]
+editor/display_folded = true
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="capa1" type="ParallaxLayer" parent="ParallaxBackground"]
+editor/display_folded = true
+
+[node name="Sprite2" type="Sprite" parent="ParallaxBackground/capa1"]
+position = Vector2( 2075.98, 2803.66 )
+scale = Vector2( 16.6002, 16.7409 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="capa2" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/capa2"]
+position = Vector2( 688.134, 1918.25 )
+scale = Vector2( 9.47039, 2.81009 )
+texture = ExtResource( 2 )
+
+[node name="Sprite2" type="Sprite" parent="ParallaxBackground/capa2"]
+position = Vector2( 3385.92, 1914.93 )
+scale = Vector2( 6.79537, 2.21807 )
+texture = ExtResource( 2 )
+
+[node name="capa3" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/capa3"]
+position = Vector2( 486.728, 1947.68 )
+scale = Vector2( 3.05785, 2.68488 )
+texture = ExtResource( 3 )
+
+[node name="Sprite6" type="Sprite" parent="ParallaxBackground/capa3"]
+position = Vector2( -761.39, 1950.55 )
+scale = Vector2( 3.44519, 3.02497 )
+texture = ExtResource( 3 )
+
+[node name="Sprite2" type="Sprite" parent="ParallaxBackground/capa3"]
+position = Vector2( 1606.82, 1942.46 )
+scale = Vector2( 2.80558, 2.58043 )
+texture = ExtResource( 3 )
+
+[node name="Sprite3" type="Sprite" parent="ParallaxBackground/capa3"]
+position = Vector2( 2412.39, 1938.64 )
+scale = Vector2( 2.64182, 2.31959 )
+texture = ExtResource( 3 )
+
+[node name="Sprite4" type="Sprite" parent="ParallaxBackground/capa3"]
+position = Vector2( 3422.45, 1937.04 )
+scale = Vector2( 2.64182, 2.34233 )
+texture = ExtResource( 3 )
+
+[node name="Sprite5" type="Sprite" parent="ParallaxBackground/capa3"]
+position = Vector2( 4590.63, 1941.27 )
+scale = Vector2( 3.47991, 3.05546 )
+texture = ExtResource( 3 )
+
+[node name="capa4" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2" type="Sprite" parent="ParallaxBackground/capa4"]
+position = Vector2( 172.209, 2035.38 )
+scale = Vector2( 1.40856, 2.1517 )
+texture = ExtResource( 4 )
+
+[node name="Sprite10" type="Sprite" parent="ParallaxBackground/capa4"]
+position = Vector2( -382.888, 2023.83 )
+scale = Vector2( 2.02009, 2.07326 )
+texture = ExtResource( 4 )
+
+[node name="Sprite11" type="Sprite" parent="ParallaxBackground/capa4"]
+position = Vector2( -1126.84, 2025.68 )
+scale = Vector2( 2.02009, 2.07326 )
+texture = ExtResource( 4 )
+
+[node name="Sprite3" type="Sprite" parent="ParallaxBackground/capa4"]
+position = Vector2( 1194.89, 2050.81 )
+scale = Vector2( 1.34061, 2.02771 )
+texture = ExtResource( 4 )
+
+[node name="Sprite5" type="Sprite" parent="ParallaxBackground/capa4"]
+position = Vector2( 1747.97, 2050.89 )
+scale = Vector2( 1.54797, 1.99873 )
+texture = ExtResource( 4 )
+
+[node name="Sprite6" type="Sprite" parent="ParallaxBackground/capa4"]
+position = Vector2( 2293.48, 2060.93 )
+scale = Vector2( 1.34061, 1.81874 )
+texture = ExtResource( 4 )
+
+[node name="Sprite7" type="Sprite" parent="ParallaxBackground/capa4"]
+position = Vector2( 2762.62, 2057.18 )
+scale = Vector2( 1.34061, 1.76758 )
+texture = ExtResource( 4 )
+
+[node name="Sprite8" type="Sprite" parent="ParallaxBackground/capa4"]
+position = Vector2( 3234.97, 2066.38 )
+scale = Vector2( 1.34061, 1.85683 )
+texture = ExtResource( 4 )
+
+[node name="Sprite9" type="Sprite" parent="ParallaxBackground/capa4"]
+position = Vector2( 3748.58, 2070.34 )
+scale = Vector2( 1.34061, 1.86989 )
+texture = ExtResource( 4 )
+
+[node name="Sprite4" type="Sprite" parent="ParallaxBackground/capa4"]
+position = Vector2( 689.728, 2048.36 )
+scale = Vector2( 1.34061, 1.89821 )
+texture = ExtResource( 4 )
+
+[node name="capa5" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="capa6" type="ParallaxLayer" parent="ParallaxBackground"]
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/capa6"]
+position = Vector2( 583.525, 1786.08 )
+scale = Vector2( 3.48366, 4.7413 )
+texture = ExtResource( 5 )
+
+[node name="Sprite5" type="Sprite" parent="ParallaxBackground/capa6"]
+position = Vector2( -718.764, 1788.03 )
+scale = Vector2( 3.47173, 4.75922 )
+texture = ExtResource( 5 )
+
+[node name="Sprite2" type="Sprite" parent="ParallaxBackground/capa6"]
+position = Vector2( 1975.27, 1790.45 )
+scale = Vector2( 3.83323, 4.72772 )
+texture = ExtResource( 5 )
+
+[node name="Sprite3" type="Sprite" parent="ParallaxBackground/capa6"]
+position = Vector2( 3397.15, 1804.88 )
+scale = Vector2( 3.63578, 4.64729 )
+texture = ExtResource( 5 )
+
+[node name="Sprite4" type="Sprite" parent="ParallaxBackground/capa6"]
+position = Vector2( 4775.64, 1811.28 )
+scale = Vector2( 3.58099, 4.53969 )
+texture = ExtResource( 5 )

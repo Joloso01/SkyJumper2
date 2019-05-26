@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 3934.41, 13.3799 )
+
+[node name="suelo" type="Area2D" groups=[
+"enemy",
+"enemigo",
+]]
+editor/display_folded = true
+position = Vector2( 160.134, 2279.43 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 1247.93, 9.63037 )
+shape = SubResource( 1 )
