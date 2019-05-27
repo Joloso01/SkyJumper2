@@ -16,6 +16,7 @@ var puntos = 0
 export var vida_maxima = 100
 export var vida_actual = 100
 export var buff_curacion = 1
+var caida = false
 
 var barra_vida
 
@@ -81,6 +82,7 @@ func _physics_process(delta):
 					salto_contador += 1
 					movimiento.y = salto_altura
 					on_ground = false
+					caida = false
 				
 		arriba.y += GRAVEDAD
 		
@@ -108,7 +110,6 @@ func _physics_process(delta):
 			if esta_atac == false:
 				on_ground = false
 				if movimiento.y < 0:
-					
 					$AnimatedSprite.animation = "salto"
 				else:
 					$AnimatedSprite.animation = "caida"
