@@ -60,6 +60,22 @@ height = 31.1194
 [sub_resource type="CircleShape2D" id=3]
 radius = 7.91135
 
+[sub_resource type="Animation" id=4]
+resource_name = "quieto"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 0 ]
+}
+
 [sub_resource type="Animation" id=5]
 resource_name = "quieto"
 loop = true
@@ -684,22 +700,6 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 3, 4, 0 ]
 }
 
-[sub_resource type="Animation" id=44]
-resource_name = "quieto"
-loop = true
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.6 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 0, 1, 2, 3, 4, 0 ]
-}
-
 [node name="mundo" type="Node" groups=[
 "mundo",
 ]]
@@ -814,7 +814,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_2"]
-anims/quieto = SubResource( 5 )
+anims/quieto = SubResource( 4 )
 
 [node name="moneda_3" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -833,7 +833,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_3"]
-anims/quieto = SubResource( 6 )
+anims/quieto = SubResource( 5 )
 
 [node name="moneda_4" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -852,7 +852,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_4"]
-anims/quieto = SubResource( 7 )
+anims/quieto = SubResource( 6 )
 
 [node name="moneda_5" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -871,7 +871,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_5"]
-anims/quieto = SubResource( 8 )
+anims/quieto = SubResource( 7 )
 
 [node name="moneda_6" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -890,7 +890,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_6"]
-anims/quieto = SubResource( 9 )
+anims/quieto = SubResource( 8 )
 
 [node name="moneda_7" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -909,7 +909,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_7"]
-anims/quieto = SubResource( 10 )
+anims/quieto = SubResource( 9 )
 
 [node name="moneda_8" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -928,7 +928,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_8"]
-anims/quieto = SubResource( 11 )
+anims/quieto = SubResource( 10 )
 
 [node name="moneda_9" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -947,7 +947,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_9"]
-anims/quieto = SubResource( 12 )
+anims/quieto = SubResource( 11 )
 
 [node name="moneda_10" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -966,7 +966,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_10"]
-anims/quieto = SubResource( 13 )
+anims/quieto = SubResource( 12 )
 
 [node name="moneda_11" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -985,7 +985,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_11"]
-anims/quieto = SubResource( 14 )
+anims/quieto = SubResource( 13 )
 
 [node name="moneda_12" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1004,7 +1004,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_12"]
-anims/quieto = SubResource( 15 )
+anims/quieto = SubResource( 14 )
 
 [node name="moneda_13" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1023,7 +1023,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_13"]
-anims/quieto = SubResource( 16 )
+anims/quieto = SubResource( 15 )
 
 [node name="moneda_14" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1042,7 +1042,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_14"]
-anims/quieto = SubResource( 17 )
+anims/quieto = SubResource( 16 )
 
 [node name="moneda_15" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1061,7 +1061,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_15"]
-anims/quieto = SubResource( 18 )
+anims/quieto = SubResource( 17 )
 
 [node name="moneda_16" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1080,7 +1080,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_16"]
-anims/quieto = SubResource( 19 )
+anims/quieto = SubResource( 18 )
 
 [node name="moneda_17" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1099,7 +1099,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_17"]
-anims/quieto = SubResource( 20 )
+anims/quieto = SubResource( 19 )
 
 [node name="moneda_18" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1118,7 +1118,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_18"]
-anims/quieto = SubResource( 21 )
+anims/quieto = SubResource( 20 )
 
 [node name="moneda_19" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1137,7 +1137,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_19"]
-anims/quieto = SubResource( 22 )
+anims/quieto = SubResource( 21 )
 
 [node name="moneda_20" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1156,7 +1156,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_20"]
-anims/quieto = SubResource( 23 )
+anims/quieto = SubResource( 22 )
 
 [node name="moneda_21" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1175,7 +1175,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_21"]
-anims/quieto = SubResource( 24 )
+anims/quieto = SubResource( 23 )
 
 [node name="moneda_22" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1194,7 +1194,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_22"]
-anims/quieto = SubResource( 25 )
+anims/quieto = SubResource( 24 )
 
 [node name="moneda_23" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1213,7 +1213,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_23"]
-anims/quieto = SubResource( 26 )
+anims/quieto = SubResource( 25 )
 
 [node name="moneda_24" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1232,7 +1232,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_24"]
-anims/quieto = SubResource( 27 )
+anims/quieto = SubResource( 26 )
 
 [node name="moneda_25" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1251,7 +1251,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_25"]
-anims/quieto = SubResource( 28 )
+anims/quieto = SubResource( 27 )
 
 [node name="moneda_26" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1270,7 +1270,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_26"]
-anims/quieto = SubResource( 29 )
+anims/quieto = SubResource( 28 )
 
 [node name="moneda_27" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1289,7 +1289,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_27"]
-anims/quieto = SubResource( 30 )
+anims/quieto = SubResource( 29 )
 
 [node name="moneda_28" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1308,7 +1308,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_28"]
-anims/quieto = SubResource( 31 )
+anims/quieto = SubResource( 30 )
 
 [node name="moneda_29" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1327,7 +1327,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_29"]
-anims/quieto = SubResource( 32 )
+anims/quieto = SubResource( 31 )
 
 [node name="moneda_30" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1346,7 +1346,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_30"]
-anims/quieto = SubResource( 33 )
+anims/quieto = SubResource( 32 )
 
 [node name="moneda_31" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1365,7 +1365,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_31"]
-anims/quieto = SubResource( 34 )
+anims/quieto = SubResource( 33 )
 
 [node name="moneda_32" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1384,7 +1384,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_32"]
-anims/quieto = SubResource( 35 )
+anims/quieto = SubResource( 34 )
 
 [node name="moneda_33" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1403,7 +1403,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_33"]
-anims/quieto = SubResource( 36 )
+anims/quieto = SubResource( 35 )
 
 [node name="moneda_34" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1422,7 +1422,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_34"]
-anims/quieto = SubResource( 37 )
+anims/quieto = SubResource( 36 )
 
 [node name="moneda_35" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1441,7 +1441,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_35"]
-anims/quieto = SubResource( 38 )
+anims/quieto = SubResource( 37 )
 
 [node name="moneda_36" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1460,7 +1460,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_36"]
-anims/quieto = SubResource( 39 )
+anims/quieto = SubResource( 38 )
 
 [node name="moneda_37" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1479,7 +1479,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_37"]
-anims/quieto = SubResource( 40 )
+anims/quieto = SubResource( 39 )
 
 [node name="moneda_38" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1498,7 +1498,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_38"]
-anims/quieto = SubResource( 41 )
+anims/quieto = SubResource( 40 )
 
 [node name="moneda_39" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1517,7 +1517,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_39"]
-anims/quieto = SubResource( 42 )
+anims/quieto = SubResource( 41 )
 
 [node name="moneda_40" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1536,7 +1536,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_40"]
-anims/quieto = SubResource( 43 )
+anims/quieto = SubResource( 42 )
 
 [node name="moneda_41" type="Area2D" parent="objetos"]
 editor/display_folded = true
@@ -1555,7 +1555,7 @@ frame = 1
 shape = SubResource( 3 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="objetos/moneda_41"]
-anims/quieto = SubResource( 44 )
+anims/quieto = SubResource( 43 )
 
 [node name="CambioNivel" parent="." instance=ExtResource( 39 )]
 position = Vector2( 3361.73, 1786.73 )

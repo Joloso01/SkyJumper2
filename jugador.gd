@@ -18,6 +18,8 @@ export var vida_actual = 100
 export var buff_curacion = 1
 var caida = false
 
+var moneda_actual
+
 var barra_vida
 
 
@@ -159,5 +161,6 @@ func _on_moneda_1_body_entered(body):
 	puntos += 2
 	print(puntos)
 	
-
+func monedas_act():
+	moneda_actual == puntos
 	
