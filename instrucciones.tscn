@@ -1,11 +1,13 @@
 [gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://instrucciones.gd" type="Script" id=1]
-[ext_resource path="res://MENU PRINCIPAL/botones inicio/boton2.png" type="Texture" id=2]
-[ext_resource path="res://Fuente/Nugie Romantic.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://Fuente/Nugie Romantic Italic.ttf" type="DynamicFontData" id=4]
-[ext_resource path="res://Node23D.gd" type="Script" id=5]
-[ext_resource path="res://MENU PRINCIPAL/Cursor.png" type="Texture" id=6]
+[ext_resource path="res://MENU PRINCIPAL/banner/2484.png" type="Texture" id=2]
+[ext_resource path="res://Fuente/Nugie Romantic Italic.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://MENU PRINCIPAL/banner/botonseto2.png" type="Texture" id=4]
+[ext_resource path="res://MENU PRINCIPAL/pack RPG/PNG/buttonLong_blue.png" type="Texture" id=5]
+[ext_resource path="res://Fuente/Nugie Romantic.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://Node23D.gd" type="Script" id=7]
+[ext_resource path="res://MENU PRINCIPAL/Cursor.png" type="Texture" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 20
@@ -14,20 +16,9 @@ use_filter = true
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 20
+size = 35
 use_mipmaps = true
-use_filter = true
-font_data = ExtResource( 3 )
-
-[sub_resource type="DynamicFont" id=3]
-size = 32
-font_data = ExtResource( 4 )
-
-[sub_resource type="DynamicFont" id=4]
-size = 20
-use_mipmaps = true
-use_filter = true
-font_data = ExtResource( 4 )
+font_data = ExtResource( 6 )
 
 [node name="Control" type="Control"]
 anchor_right = 1.0
@@ -35,73 +26,12 @@ anchor_bottom = 1.0
 script = ExtResource( 1 )
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
+editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = -2.70749
 margin_right = -2.70752
 texture = ExtResource( 2 )
-
-[node name="Label" type="Label" parent="NinePatchRect"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 139.0
-margin_top = 134.0
-margin_right = -157.0
-margin_bottom = -404.0
-custom_fonts/font = SubResource( 1 )
-custom_colors/font_color = Color( 0.733333, 0.164706, 0.164706, 1 )
-custom_colors/font_color_shadow = Color( 0.137255, 0.133333, 0.133333, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/line_spacing = 1
-custom_constants/shadow_offset_y = 1
-custom_constants/shadow_as_outline = 1
-text = "Objetivo:
-
-Consiste en llegar hasta la casa del final venciendo a los enemigos y cogiendo los objetos"
-
-[node name="Label2" type="Label" parent="NinePatchRect"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 138.0
-margin_top = 230.836
-margin_right = -464.0
-margin_bottom = -118.164
-custom_fonts/font = SubResource( 2 )
-custom_colors/font_color = Color( 0.733333, 0.164706, 0.164706, 1 )
-custom_colors/font_color_shadow = Color( 0.0313726, 0.0235294, 0.0235294, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/line_spacing = 1
-custom_constants/shadow_offset_y = 1
-custom_constants/shadow_as_outline = 1
-text = "¿Como jugar?
-
-
-Movimiento
-
-Flechas del teclado
-
-
-Ataque:
-
-Space
-"
-
-[node name="Label3" type="Label" parent="NinePatchRect"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 423.0
-margin_top = 22.0
-margin_right = -419.0
-margin_bottom = -546.0
-custom_fonts/font = SubResource( 3 )
-custom_colors/font_color = Color( 0.270588, 0.258824, 0.196078, 1 )
-custom_colors/font_outline_modulate = Color( 0.0980392, 0.0705882, 0.0705882, 1 )
-custom_colors/font_color_shadow = Color( 0.0588235, 0.352941, 0.282353, 1 )
-custom_constants/shadow_offset_x = 1
-custom_constants/line_spacing = 1
-custom_constants/shadow_offset_y = 1
-custom_constants/shadow_as_outline = 0
-text = "Instrucciones"
 
 [node name="TextureButton" type="TextureButton" parent="NinePatchRect"]
 margin_left = 194.0
@@ -115,7 +45,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 45.0
 margin_bottom = -45.0
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.94902, 0.0862745, 0.0862745, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 1
 custom_constants/line_spacing = 1
@@ -125,12 +57,139 @@ text = "Pulsa aqui para continuar"
 align = 1
 valign = 1
 
+[node name="TextureRect" type="TextureRect" parent="NinePatchRect"]
+margin_left = 135.05
+margin_top = 219.667
+margin_right = 340.05
+margin_bottom = 422.667
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="NinePatchRect/TextureRect"]
+margin_left = 77.0
+margin_top = 15.2
+margin_right = 132.0
+margin_bottom = 29.2
+custom_colors/font_color = Color( 0.152941, 0.305882, 0.211765, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 1
+custom_constants/line_spacing = 1
+custom_constants/shadow_offset_y = 1
+custom_constants/shadow_as_outline = 0
+text = "Objetivo"
+
+[node name="Label2" type="Label" parent="NinePatchRect/TextureRect"]
+margin_left = 20.7
+margin_top = 54.35
+margin_right = 182.7
+margin_bottom = 137.35
+custom_colors/font_color = Color( 0.00784314, 0.00784314, 0.00784314, 1 )
+text = "Coger objetos, matar enemigos y llegar a la casa del final"
+autowrap = true
+
+[node name="TextureRect2" type="TextureRect" parent="NinePatchRect"]
+margin_left = 366.85
+margin_top = 218.81
+margin_right = 571.85
+margin_bottom = 421.81
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="NinePatchRect/TextureRect2"]
+margin_left = 30.4
+margin_top = 15.2
+margin_right = 174.4
+margin_bottom = 29.2
+custom_colors/font_color = Color( 0.282353, 0.341176, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Movimiento personaje"
+
+[node name="Label2" type="Label" parent="NinePatchRect/TextureRect2"]
+margin_left = 21.0
+margin_top = 54.0
+margin_right = 150.0
+margin_bottom = 85.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Flechas izquierda, derecha"
+autowrap = true
+
+[node name="Label3" type="Label" parent="NinePatchRect/TextureRect2"]
+margin_left = 21.0
+margin_top = 92.95
+margin_right = 150.0
+margin_bottom = 123.95
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Salto:
+Flecha arriba"
+autowrap = true
+
+[node name="TextureRect3" type="TextureRect" parent="NinePatchRect"]
+margin_left = 586.3
+margin_top = 222.239
+margin_right = 791.3
+margin_bottom = 425.239
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="NinePatchRect/TextureRect3"]
+margin_left = 30.4
+margin_top = 15.2
+margin_right = 174.4
+margin_bottom = 29.2
+custom_colors/font_color = Color( 0.87451, 0.105882, 0.105882, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Ataque personaje"
+align = 1
+
+[node name="Label2" type="Label" parent="NinePatchRect/TextureRect3"]
+margin_left = 21.0
+margin_top = 54.0
+margin_right = 150.0
+margin_bottom = 85.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Flechas izquierda, derecha"
+autowrap = true
+
+[node name="Label3" type="Label" parent="NinePatchRect/TextureRect3"]
+margin_left = 21.0
+margin_top = 92.95
+margin_right = 150.0
+margin_bottom = 123.95
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Barra Espaciadora
+(Space)"
+autowrap = true
+
+[node name="TextureRect4" type="TextureRect" parent="NinePatchRect"]
+margin_left = 254.9
+margin_top = 24.9895
+margin_right = 732.9
+margin_bottom = 134.989
+texture = ExtResource( 5 )
+expand = true
+
+[node name="Label" type="Label" parent="NinePatchRect/TextureRect4"]
+margin_right = 475.0
+margin_bottom = 97.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.6, 0.905882, 0.572549, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = -1
+custom_constants/line_spacing = 1
+custom_constants/shadow_offset_y = 1
+custom_constants/shadow_as_outline = 1
+text = "Instrucciones"
+align = 1
+valign = 1
+
 [node name="Node2D" type="Node2D" parent="."]
-script = ExtResource( 5 )
+editor/display_folded = true
+script = ExtResource( 7 )
 
 [node name="Sprite" type="Sprite" parent="Node2D"]
 position = Vector2( -5.9724, -5.9724 )
 scale = Vector2( 0.626725, 0.626725 )
-texture = ExtResource( 6 )
+texture = ExtResource( 8 )
 
 [connection signal="pressed" from="NinePatchRect/TextureButton" to="." method="_on_TextureButton_pressed"]

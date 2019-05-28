@@ -64,7 +64,7 @@ position = Vector2( -15.9343, -1474.6 )
 position = Vector2( -752.03, 1785.18 )
 
 [node name="enemy" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1456.94, 1066.52 )
+position = Vector2( 1554.91, 1058.36 )
 hp = 1215752191
 
 [node name="RayCast2D" parent="enemy" index="2"]

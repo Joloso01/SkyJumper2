@@ -41,7 +41,7 @@ margin_top = 575.0
 margin_right = 1023.0
 margin_bottom = 597.0
 custom_colors/font_color = Color( 0.196078, 0.894118, 0.270588, 1 )
-text = "Version 0.3"
+text = "Version 0.7"
 autowrap = true
 
 [node name="Label" type="Label" parent="."]
