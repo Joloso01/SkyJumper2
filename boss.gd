@@ -1,7 +1,7 @@
-extends KinematicBody2D
+ extends KinematicBody2D
 
-const VELOCIDAD = 120 #Para que camine el personaje
-const GRAVEDAD = 410 #
+const VELOCIDAD = 200 #Para que camine el personaje
+const GRAVEDAD = 400 #
 var movimiento = Vector2()
 const techo = Vector2(0,-1)
 export(int) var hp = 1
@@ -16,22 +16,21 @@ func dead():
 	if hp <= 0:
 		muerto = true
 		movimiento = Vector2(0, 0)
-		$AnimatedSprite.play("muerte")
+		$AnimatedSprite.play("muerto")
 		$CollisionShape2D.disabled = true
 		$Timer.start()
 		
 
-#warning-ignore:unused_argument
 func _physics_process(delta):	
 	if muerto == false:
-		movimiento.x = VELOCIDAD * direccion
+		movimiento.x=VELOCIDAD * direccion
 		
 		if direccion == 1:
 			$AnimatedSprite.flip_h = false
 		else:
 			$AnimatedSprite.flip_h = true
 			
-		$AnimatedSprite.play("movimiento")
+		$AnimatedSprite.play("correr")
 		
 		movimiento.y += GRAVEDAD
 		
@@ -49,6 +48,8 @@ func _physics_process(delta):
 			for i in range (get_slide_count()):
 				if "player" in get_slide_collision(i).collider.name:
 					get_slide_collision(i).collider.dead()
+		
+		add_collision_exception_with(self)
 
 #		var obj_colisionado = get_slide_collision(get_slide_count()-1).collider
 #		if(obj_colisionado.is_in_group("player")):

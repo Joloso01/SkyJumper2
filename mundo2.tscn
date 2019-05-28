@@ -1,11 +1,12 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://mundo2.gd" type="Script" id=1]
 [ext_resource path="res://completo.tres" type="TileSet" id=2]
-[ext_resource path="res://escenas mundos/jugador.tscn" type="PackedScene" id=3]
-[ext_resource path="res://escenas mundos/fondo.tscn" type="PackedScene" id=4]
-[ext_resource path="res://enemy.tscn" type="PackedScene" id=5]
-[ext_resource path="res://moneda_1.tscn" type="PackedScene" id=6]
+[ext_resource path="res://CambioNivel.tscn" type="PackedScene" id=3]
+[ext_resource path="res://escenas mundos/jugador.tscn" type="PackedScene" id=4]
+[ext_resource path="res://escenas mundos/fondo.tscn" type="PackedScene" id=5]
+[ext_resource path="res://enemy.tscn" type="PackedScene" id=6]
+[ext_resource path="res://moneda_1.tscn" type="PackedScene" id=7]
 
 [node name="mundo2" type="Node"]
 script = ExtResource( 1 )
@@ -28,7 +29,18 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 1835045, 122, 0, 1900600, 101, 0, 1900606, 101, 0, 1900612, 101, 0, 2162725, 109, 0, 2162762, 101, 0, 2228276, 106, 0, 2555984, 101, 0, 2621615, 95, 0, 2621616, 95, 0, 2621621, 95, 0, 2621622, 95, 0, 2621623, 95, 0, 2687152, 96, 0, 2687154, 96, 0, 2752702, 96, 0, 2818134, 101, 0, 2818240, 96, 0, 2883776, 96, 0, 2883777, 96, 0, 3014734, 109, 0, 3014743, 113, 0, 3145907, 109, 0, 3145909, 95, 0, 3145910, 95, 0, 3211362, 105, 0, 3211363, 107, 0, 3211364, 105, 0, 3211443, 96, 0, 3276978, 96, 0, 3342512, 96, 0, 3473515, 106, 0, 3932343, 95, 0, 3932344, 95, 0, 3932345, 95, 0, 3932346, 95, 0, 3997877, 95, 0, 3997878, 95, 0, 4128961, 109, 0, 4194397, 106, 0, 4259952, 24, 0, 4259955, 24, 0, 4325488, 24, 0, 4325491, 24, 0, 4391024, 24, 0, 4391027, 24, 0, 4849828, 115, 0, 4849830, 121, 0, 4915364, 115, 0, 4915365, 115, 0, 4915373, 109, 0, 5046453, 119, 0, 5046455, 119, 0, 5177523, 119, 0, 5177525, 119, 0, 5177527, 119, 0, 5177529, 119, 0, 5177531, 119, 0, 5177533, 119, 0, 5177535, 119, 0, 5177537, 119, 0, 5177539, 119, 0, 5177541, 119, 0, 5177543, 119, 0, 5177545, 119, 0, 5177547, 119, 0, 5308595, 119, 0, 5308597, 119, 0, 5308599, 119, 0, 5308601, 119, 0, 5308603, 119, 0, 5308605, 119, 0, 5308607, 119, 0, 5308609, 119, 0, 5308611, 119, 0, 5308613, 119, 0, 5308615, 119, 0, 5308617, 119, 0, 5308619, 119, 0, 5439665, 119, 0, 5439667, 119, 0, 5439669, 119, 0, 5439671, 119, 0, 5439673, 119, 0, 5439675, 119, 0, 5439677, 119, 0, 5439679, 119, 0, 5439681, 119, 0, 5439683, 119, 0, 5439685, 119, 0, 5439687, 120, 0, 5439689, 119, 0, 5439691, 119, 0, 5570737, 119, 0, 5570739, 119, 0, 5570741, 119, 0, 5570743, 119, 0, 5570745, 119, 0, 5570747, 119, 0, 5570749, 119, 0, 5570751, 119, 0, 5570753, 119, 0, 5570755, 119, 0, 5570757, 119, 0, 5570759, 120, 0, 5570761, 119, 0, 5570763, 119, 0, 5701810, 106, 0, 5701811, 106, 0, 5701812, 106, 0, 5701813, 106, 0, 5701814, 106, 0, 5701815, 106, 0, 5701816, 106, 0, 5701817, 106, 0, 5701818, 106, 0, 5701819, 106, 0, 5701820, 106, 0, 5701821, 106, 0, 5701822, 106, 0, 5701823, 106, 0, 5701824, 106, 0, 5701825, 106, 0, 5701826, 106, 0, 5701827, 106, 0, 5701828, 106, 0, 5701829, 106, 0, 5701830, 106, 0, 5701831, 106, 0, 5701832, 106, 0, 5701833, 106, 0, 5701834, 106, 0, 5701835, 106, 0 )
 
-[node name="jugador" parent="." instance=ExtResource( 3 )]
+[node name="CambioNivel" parent="." instance=ExtResource( 3 )]
+position = Vector2( 3200.15, 1365.02 )
+mapa_select = "res://Final.tscn"
+
+[node name="Sprite" parent="CambioNivel" index="0"]
+position = Vector2( -0.851379, 2.46887 )
+scale = Vector2( 1.41796, 1.41796 )
+
+[node name="CollisionShape2D" parent="CambioNivel" index="1"]
+position = Vector2( -0.681152, 2.90831 )
+
+[node name="jugador" parent="." instance=ExtResource( 4 )]
 editor/display_folded = false
 position = Vector2( 12.2713, 379.834 )
 
@@ -36,7 +48,7 @@ position = Vector2( 12.2713, 379.834 )
 drag_margin_left = 0.1
 drag_margin_right = 0.1
 
-[node name="fondo" parent="." instance=ExtResource( 4 )]
+[node name="fondo" parent="." instance=ExtResource( 5 )]
 
 [node name="capa1" parent="fondo/ParallaxBackground" index="0"]
 position = Vector2( 131.055, -114.673 )
@@ -63,256 +75,261 @@ position = Vector2( -15.9343, -1474.6 )
 [node name="Sprite5" parent="fondo/ParallaxBackground/capa6" index="1"]
 position = Vector2( -752.03, 1785.18 )
 
-[node name="enemy" parent="." instance=ExtResource( 5 )]
+[node name="enemy" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1554.91, 1058.36 )
 hp = 1215752191
+
+[node name="AnimatedSprite" parent="enemy" index="0"]
+frame = 2
 
 [node name="RayCast2D" parent="enemy" index="2"]
 cast_to = Vector2( 0, 13 )
 
-[node name="enemy2" parent="." instance=ExtResource( 5 )]
+[node name="enemy2" parent="." instance=ExtResource( 6 )]
 position = Vector2( 2032.79, 1063.87 )
 hp = 1215752191
+
+[node name="AnimatedSprite" parent="enemy2" index="0"]
+frame = 2
 
 [node name="RayCast2D" parent="enemy2" index="2"]
 cast_to = Vector2( 0, 13 )
 
-[node name="enemy3" parent="." instance=ExtResource( 5 )]
+[node name="enemy3" parent="." instance=ExtResource( 6 )]
 position = Vector2( 2583.63, 856.105 )
 hp = 1215752191
 
-[node name="enemy4" parent="." instance=ExtResource( 5 )]
+[node name="enemy4" parent="." instance=ExtResource( 6 )]
 position = Vector2( 2542.56, 1057.85 )
 hp = 1215752191
 
 [node name="objetos" type="Node" parent="."]
 editor/display_folded = true
 
-[node name="moneda_1" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_1" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 69.2756, 404.889 )
 
-[node name="moneda_2" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_2" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 89.2703, 404.889 )
 
-[node name="moneda_3" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_3" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 109.753, 404.889 )
 
-[node name="moneda_4" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_4" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 130.723, 404.889 )
 
-[node name="moneda_5" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_5" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 153.156, 404.889 )
 
-[node name="moneda_6" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_6" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 356.029, 405.377 )
 
-[node name="moneda_7" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_7" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 380.412, 402.939 )
 
-[node name="moneda_8" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_8" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 404.308, 405.377 )
 
-[node name="moneda_9" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_9" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 619.373, 529.734 )
 
-[node name="moneda_10" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_10" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 641.319, 527.784 )
 
-[node name="moneda_11" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_11" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 660.338, 527.784 )
 
-[node name="moneda_12" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_12" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 678.87, 527.784 )
 
-[node name="moneda_13" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_13" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 698.377, 527.784 )
 
-[node name="moneda_14" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_14" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 716.908, 527.784 )
 
-[node name="moneda_15" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_15" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 736.903, 524.37 )
 
-[node name="moneda_16" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_16" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 877.353, 526.321 )
 
-[node name="moneda_17" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_17" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 894.422, 526.321 )
 
-[node name="moneda_18" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_18" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 910.515, 526.321 )
 
-[node name="moneda_19" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_19" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 926.609, 526.321 )
 
-[node name="moneda_20" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_20" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 948.066, 526.321 )
 
-[node name="moneda_21" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_21" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1107.54, 546.315 )
 
-[node name="moneda_22" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_22" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1290.9, 734.558 )
 
-[node name="moneda_23" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_23" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1310.41, 734.558 )
 
-[node name="moneda_24" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_24" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1330.89, 734.558 )
 
-[node name="moneda_25" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_25" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1349.91, 734.558 )
 
-[node name="moneda_26" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_26" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1369.91, 734.558 )
 
-[node name="moneda_27" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_27" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1559.61, 772.109 )
 
-[node name="moneda_28" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_28" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1578.14, 772.109 )
 
-[node name="moneda_29" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_29" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1599.11, 772.109 )
 
-[node name="moneda_30" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_30" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1495.73, 1011.56 )
 
-[node name="moneda_31" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_31" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1568.88, 917.436 )
 
-[node name="moneda_32" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_32" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1738.1, 1009.61 )
 
-[node name="moneda_33" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_33" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1756.63, 1009.61 )
 
-[node name="moneda_34" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_34" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1779.55, 1009.61 )
 
-[node name="moneda_35" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_35" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1801.5, 1009.61 )
 
-[node name="moneda_36" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_36" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1842.95, 1009.61 )
 
-[node name="moneda_37" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_37" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1861.48, 1009.61 )
 
-[node name="moneda_38" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_38" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1882.94, 1009.61 )
 
-[node name="moneda_39" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_39" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1902.45, 1009.61 )
 
-[node name="moneda_40" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_40" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1719.57, 835.506 )
 
-[node name="moneda_41" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_41" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1844.9, 755.528 )
 
-[node name="moneda_42" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_42" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1864.41, 755.528 )
 
-[node name="moneda_43" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_43" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 2010.22, 774.059 )
 
-[node name="moneda_44" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_44" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 2027.29, 774.059 )
 
-[node name="moneda_45" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_45" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 2064.84, 913.047 )
 
-[node name="moneda_46" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_46" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 2081.42, 913.047 )
 
-[node name="moneda_47" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_47" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 2098.98, 913.047 )
 
-[node name="moneda_48" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_48" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 2215.61, 741.028 )
 
-[node name="moneda_49" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_49" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 2303.88, 692.748 )
 
-[node name="moneda_54" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_54" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 2584.02, 692.748 )
 
-[node name="moneda_55" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_55" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 2583.6, 669.334 )
 
-[node name="moneda_56" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_56" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 2923.69, 754.354 )
 
-[node name="moneda_57" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_57" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 2945.84, 754.354 )
 
-[node name="moneda_58" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_58" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 2964.4, 754.354 )
 
-[node name="moneda_59" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_59" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 3010.5, 804.648 )
 
-[node name="moneda_60" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_60" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 3030.26, 804.648 )
 
-[node name="moneda_61" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_61" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 3074.57, 881.287 )
 
-[node name="moneda_62" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_62" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 3101.51, 881.287 )
 
-[node name="moneda_63" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_63" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 3073.97, 1023.19 )
 
-[node name="moneda_64" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_64" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 3039.24, 1040.55 )
 
-[node name="moneda_65" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_65" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 3005.71, 1058.51 )
 
-[node name="moneda_66" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_66" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 2979.97, 1073.48 )
 
-[node name="moneda_67" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_67" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 2700.96, 1202.81 )
 
-[node name="moneda_68" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_68" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 2721.31, 1202.81 )
 
-[node name="moneda_69" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_69" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 2741.67, 1202.81 )
 
-[node name="moneda_70" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_70" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 2759.03, 1191.43 )
 
-[node name="moneda_71" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_71" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 2908.72, 1360.28 )
 
-[node name="moneda_72" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_72" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 2935.06, 1360.28 )
 
-[node name="moneda_73" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_73" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 2960.81, 1360.28 )
 
-[node name="moneda_74" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_74" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 2983.56, 1360.28 )
 
-[node name="moneda_75" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_75" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 3006.31, 1360.28 )
 
-[node name="moneda_50" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_50" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1720.78, 793.484 )
 
-[node name="moneda_51" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_51" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1720.78, 767.789 )
 
-[node name="moneda_52" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_52" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1720.78, 745.598 )
 
-[node name="moneda_53" parent="objetos" instance=ExtResource( 6 )]
+[node name="moneda_53" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1720.78, 717.275 )
-
 [connection signal="body_entered" from="objetos/moneda_1" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_2" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_3" to="jugador" method="_on_moneda_1_body_entered"]
@@ -388,6 +405,8 @@ position = Vector2( 1720.78, 717.275 )
 [connection signal="body_entered" from="objetos/moneda_51" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_52" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_53" to="jugador" method="_on_moneda_1_body_entered"]
+
+[editable path="CambioNivel"]
 
 [editable path="jugador"]
 

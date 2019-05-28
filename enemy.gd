@@ -49,7 +49,7 @@ func _physics_process(delta):
 				if "player" in get_slide_collision(i).collider.name:
 					get_slide_collision(i).collider.dead()
 		
-		add_collision_exception_with(self)
+#		add_collision_exception_with(self)
 
 #		var obj_colisionado = get_slide_collision(get_slide_count()-1).collider
 #		if(obj_colisionado.is_in_group("player")):
