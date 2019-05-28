@@ -1,42 +1,31 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://enemy.gd" type="Script" id=1]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_01.png" type="Texture" id=2]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_02.png" type="Texture" id=3]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_03.png" type="Texture" id=4]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_04.png" type="Texture" id=5]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_05.png" type="Texture" id=6]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_06.png" type="Texture" id=7]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_07.png" type="Texture" id=8]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_08.png" type="Texture" id=9]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_09.png" type="Texture" id=10]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_10.png" type="Texture" id=11]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_11.png" type="Texture" id=12]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_12.png" type="Texture" id=13]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_13.png" type="Texture" id=14]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_14.png" type="Texture" id=15]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_15.png" type="Texture" id=16]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_16.png" type="Texture" id=17]
-[ext_resource path="res://enemigos/CartoonViking/DeathGun01/DeathGun01_17.png" type="Texture" id=18]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_01.png" type="Texture" id=19]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_02.png" type="Texture" id=20]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_03.png" type="Texture" id=21]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_04.png" type="Texture" id=22]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_05.png" type="Texture" id=23]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_06.png" type="Texture" id=24]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_07.png" type="Texture" id=25]
-[ext_resource path="res://enemigos/CartoonViking/RunPose01_01/RunPose01_08.png" type="Texture" id=26]
+[ext_resource path="res://Elbicho/minotauro/minotauro mov/1.png" type="Texture" id=2]
+[ext_resource path="res://Elbicho/minotauro/minotauro mov/2.png" type="Texture" id=3]
+[ext_resource path="res://Elbicho/minotauro/minotauro mov/3.png" type="Texture" id=4]
+[ext_resource path="res://Elbicho/minotauro/minotauro mov/4.png" type="Texture" id=5]
+[ext_resource path="res://Elbicho/minotauro/minotauro mov/5.png" type="Texture" id=6]
+[ext_resource path="res://Elbicho/minotauro/minotauro mov/6.png" type="Texture" id=7]
+[ext_resource path="res://Elbicho/minotauro/minotauro mov/7.png" type="Texture" id=8]
+[ext_resource path="res://Elbicho/minotauro/minotauro mov/8.png" type="Texture" id=9]
+[ext_resource path="res://Elbicho/minotauro/muerte/1.png" type="Texture" id=10]
+[ext_resource path="res://Elbicho/minotauro/muerte/2.png" type="Texture" id=11]
+[ext_resource path="res://Elbicho/minotauro/muerte/3.png" type="Texture" id=12]
+[ext_resource path="res://Elbicho/minotauro/muerte/4.png" type="Texture" id=13]
+[ext_resource path="res://Elbicho/minotauro/muerte/5.png" type="Texture" id=14]
+[ext_resource path="res://Elbicho/minotauro/muerte/6.png" type="Texture" id=15]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
 "loop": true,
-"name": "muerto",
-"speed": 5.0
+"name": "movi",
+"speed": 13.0
 }, {
-"frames": [ ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ) ],
+"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ) ],
 "loop": true,
-"name": "correr",
+"name": "muerte",
 "speed": 5.0
 } ]
 
@@ -45,10 +34,9 @@ radius = 5.8952
 height = 31.1194
 
 [node name="enemy" type="KinematicBody2D" groups=[
-"enemigo",
 "enemy",
+"enemigo",
 ]]
-editor/display_folded = true
 position = Vector2( 1649.1, 1886.68 )
 collision/safe_margin = 0.001
 script = ExtResource( 1 )
