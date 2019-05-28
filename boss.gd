@@ -24,7 +24,7 @@ func dead():
 #warning-ignore:unused_argument
 func _physics_process(delta):	
 	if muerto == false:
-		movimiento.x=VELOCIDAD * direccion
+		movimiento.x = VELOCIDAD * direccion
 		
 		if direccion == 1:
 			$AnimatedSprite.flip_h = false
