@@ -130,14 +130,6 @@ func _physics_process(delta):
 func quitar_vida():
 	if barra_vida.value == 0:
 		muerto()
-		
-		
-		
-#		if(Input.is_action_just_pressed("tecla_m")): #reiniciar mundo
-#	#warning-ignore:return_value_discarded
-#			get_tree().change_scene("res://mundo.tscn")
-#		if(Input.is_action_just_pressed("tecla_esc")): #test pausa 
-#			pass
 
 
 func muerto():

@@ -80,7 +80,7 @@ position = Vector2( 1554.91, 1058.36 )
 hp = 1215752191
 
 [node name="AnimatedSprite" parent="enemy" index="0"]
-frame = 2
+frame = 3
 
 [node name="RayCast2D" parent="enemy" index="2"]
 cast_to = Vector2( 0, 13 )
@@ -90,7 +90,7 @@ position = Vector2( 2032.79, 1063.87 )
 hp = 1215752191
 
 [node name="AnimatedSprite" parent="enemy2" index="0"]
-frame = 2
+frame = 3
 
 [node name="RayCast2D" parent="enemy2" index="2"]
 cast_to = Vector2( 0, 13 )
@@ -330,6 +330,7 @@ position = Vector2( 1720.78, 745.598 )
 
 [node name="moneda_53" parent="objetos" instance=ExtResource( 7 )]
 position = Vector2( 1720.78, 717.275 )
+
 [connection signal="body_entered" from="objetos/moneda_1" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_2" to="jugador" method="_on_moneda_1_body_entered"]
 [connection signal="body_entered" from="objetos/moneda_3" to="jugador" method="_on_moneda_1_body_entered"]

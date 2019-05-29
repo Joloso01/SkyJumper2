@@ -1,6 +1,6 @@
  extends KinematicBody2D
 
-const VELOCIDAD = 200 #Para que camine el personaje
+const VELOCIDAD = 300 #Para que camine el personaje
 const GRAVEDAD = 400 #
 var movimiento = Vector2()
 const techo = Vector2(0,-1)

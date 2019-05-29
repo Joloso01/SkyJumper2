@@ -70,7 +70,7 @@ position = Vector2( -0.689617, -47.4012 )
 scale = Vector2( 1.54604, 1.54604 )
 frames = SubResource( 1 )
 animation = "muerto"
-frame = 28
+frame = 10
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -84,4 +84,5 @@ enabled = true
 cast_to = Vector2( 0, 25 )
 
 [node name="Timer" type="Timer" parent="."]
+
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
